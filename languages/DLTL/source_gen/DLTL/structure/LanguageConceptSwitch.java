@@ -9,18 +9,30 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int AccuracyTestCase = 0;
-  public static final int Model = 1;
-  public static final int Property = 2;
-  public static final int TestCase = 3;
-  public static final int WorkBench = 4;
+  public static final int DataSetTestCase = 0;
+  public static final int Dataset = 1;
+  public static final int Model = 2;
+  public static final int ModelReference = 3;
+  public static final int Parameter = 4;
+  public static final int SingleDataTestCase = 5;
+  public static final int TestCase = 6;
+  public static final int TestCaseUsage = 7;
+  public static final int TestWorkbench = 8;
+  public static final int Variable = 9;
+  public static final int WorkBench = 10;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x91a99801f144985L, 0xb06a9c8c7ccee4a2L);
-    builder.put(0x6a7de6ab4ea9f3ffL, AccuracyTestCase);
+    builder.put(0x6a7de6ab4ea9f3ffL, DataSetTestCase);
+    builder.put(0x6a7de6ab4eae4a4aL, Dataset);
     builder.put(0x6a7de6ab4ea8cb72L, Model);
-    builder.put(0x6a7de6ab4ea5b690L, Property);
+    builder.put(0x6a7de6ab4eae4a88L, ModelReference);
+    builder.put(0x6a7de6ab4eae4aaaL, Parameter);
+    builder.put(0x6a7de6ab4eae4a6dL, SingleDataTestCase);
     builder.put(0x6a7de6ab4ea9d6bbL, TestCase);
+    builder.put(0x6a7de6ab4eae4a77L, TestCaseUsage);
+    builder.put(0x6a7de6ab4eae4a27L, TestWorkbench);
+    builder.put(0x6a7de6ab4eafefacL, Variable);
     builder.put(0x6a7de6ab4ea5b68dL, WorkBench);
     myIndex = builder.seal();
   }

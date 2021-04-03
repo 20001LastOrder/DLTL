@@ -9,10 +9,16 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_AccuracyTestCase;
+  private ConceptPresentation props_DataSetTestCase;
+  private ConceptPresentation props_Dataset;
   private ConceptPresentation props_Model;
-  private ConceptPresentation props_Property;
+  private ConceptPresentation props_ModelReference;
+  private ConceptPresentation props_Parameter;
+  private ConceptPresentation props_SingleDataTestCase;
   private ConceptPresentation props_TestCase;
+  private ConceptPresentation props_TestCaseUsage;
+  private ConceptPresentation props_TestWorkbench;
+  private ConceptPresentation props_Variable;
   private ConceptPresentation props_WorkBench;
 
   @Override
@@ -20,13 +26,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.AccuracyTestCase:
-        if (props_AccuracyTestCase == null) {
+      case LanguageConceptSwitch.DataSetTestCase:
+        if (props_DataSetTestCase == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("AccuracyTestCase");
-          props_AccuracyTestCase = cpb.create();
+          cpb.presentationByName();
+          props_DataSetTestCase = cpb.create();
         }
-        return props_AccuracyTestCase;
+        return props_DataSetTestCase;
+      case LanguageConceptSwitch.Dataset:
+        if (props_Dataset == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Dataset = cpb.create();
+        }
+        return props_Dataset;
       case LanguageConceptSwitch.Model:
         if (props_Model == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -34,20 +47,54 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Model = cpb.create();
         }
         return props_Model;
-      case LanguageConceptSwitch.Property:
-        if (props_Property == null) {
+      case LanguageConceptSwitch.ModelReference:
+        if (props_ModelReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Property");
-          props_Property = cpb.create();
+          cpb.presentationByReference(0x91a99801f144985L, 0xb06a9c8c7ccee4a2L, 0x6a7de6ab4eae4a88L, 0x6a7de6ab4eae4a92L, "model", "", "");
+          props_ModelReference = cpb.create();
         }
-        return props_Property;
+        return props_ModelReference;
+      case LanguageConceptSwitch.Parameter:
+        if (props_Parameter == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Parameter = cpb.create();
+        }
+        return props_Parameter;
+      case LanguageConceptSwitch.SingleDataTestCase:
+        if (props_SingleDataTestCase == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_SingleDataTestCase = cpb.create();
+        }
+        return props_SingleDataTestCase;
       case LanguageConceptSwitch.TestCase:
         if (props_TestCase == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("TestCase");
           props_TestCase = cpb.create();
         }
         return props_TestCase;
+      case LanguageConceptSwitch.TestCaseUsage:
+        if (props_TestCaseUsage == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TestCaseUsage");
+          props_TestCaseUsage = cpb.create();
+        }
+        return props_TestCaseUsage;
+      case LanguageConceptSwitch.TestWorkbench:
+        if (props_TestWorkbench == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_TestWorkbench = cpb.create();
+        }
+        return props_TestWorkbench;
+      case LanguageConceptSwitch.Variable:
+        if (props_Variable == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Variable = cpb.create();
+        }
+        return props_Variable;
       case LanguageConceptSwitch.WorkBench:
         if (props_WorkBench == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

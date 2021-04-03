@@ -11,7 +11,6 @@ import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import DLTL.generator.templates.QueriesGenerated;
 import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Arrays;
 
 public class Generator extends TemplateModuleInterpreted2 {
@@ -34,9 +33,7 @@ public class Generator extends TemplateModuleInterpreted2 {
 
   @Override
   public Collection<SLanguage> getTargetLanguages() {
-    SLanguage[] rv = new SLanguage[2];
-    rv[0] = MetaAdapterFactory.getLanguage(0x990507d335274c54L, 0xbfe90ca3c9c6247aL, "com.dslfoundry.plaintextgen");
-    rv[1] = MetaAdapterFactory.getLanguage(0xc7fb639fbe784307L, 0x89b0b5959c3fa8c8L, "jetbrains.mps.lang.text");
+    SLanguage[] rv = new SLanguage[0];
     return Arrays.asList(rv);
   }
 
