@@ -14,11 +14,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Model;
   private ConceptPresentation props_ModelReference;
   private ConceptPresentation props_Parameter;
+  private ConceptPresentation props_Predicate;
+  private ConceptPresentation props_SimpleStatement;
   private ConceptPresentation props_SingleDataTestCase;
   private ConceptPresentation props_TestCase;
   private ConceptPresentation props_TestCaseUsage;
   private ConceptPresentation props_TestWorkbench;
-  private ConceptPresentation props_Variable;
   private ConceptPresentation props_WorkBench;
 
   @Override
@@ -61,6 +62,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Parameter = cpb.create();
         }
         return props_Parameter;
+      case LanguageConceptSwitch.Predicate:
+        if (props_Predicate == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Predicate = cpb.create();
+        }
+        return props_Predicate;
+      case LanguageConceptSwitch.SimpleStatement:
+        if (props_SimpleStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("SimpleStatement");
+          props_SimpleStatement = cpb.create();
+        }
+        return props_SimpleStatement;
       case LanguageConceptSwitch.SingleDataTestCase:
         if (props_SingleDataTestCase == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -88,13 +102,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TestWorkbench = cpb.create();
         }
         return props_TestWorkbench;
-      case LanguageConceptSwitch.Variable:
-        if (props_Variable == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_Variable = cpb.create();
-        }
-        return props_Variable;
       case LanguageConceptSwitch.WorkBench:
         if (props_WorkBench == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

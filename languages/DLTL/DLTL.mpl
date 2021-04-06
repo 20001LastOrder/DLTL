@@ -10,7 +10,9 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="r:f3227015-c48d-4682-88f3-17c198fe455b(DLTL.metrics)" />
+  </accessoryModels>
   <generators>
     <generator alias="main" namespace="DLTL.generator" uuid="4a189b6e-08b4-4d01-8570-b43404aaa5b2">
       <models>

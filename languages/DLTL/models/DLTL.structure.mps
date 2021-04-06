@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -101,12 +102,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6DXTEHeF$EE" resolve="Parameter" />
     </node>
-    <node concept="1TJgyj" id="6DXTEHeFYWC" role="1TKVEi">
-      <property role="IQ2ns" value="7673542963543142184" />
+    <node concept="1TJgyj" id="6DXTEHeIGAi" role="1TKVEi">
+      <property role="IQ2ns" value="7673542963543853458" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="variables" />
+      <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6DXTEHeFYYG" resolve="Variable" />
+      <ref role="20lvS9" node="6DXTEHeJKsk" resolve="Predicate" />
     </node>
     <node concept="PrWs8" id="6DXTEHeFYUQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -215,15 +216,17 @@
   </node>
   <node concept="1TIwiD" id="6DXTEHeFYYG">
     <property role="EcuMT" value="7673542963543142316" />
-    <property role="TrG5h" value="Variable" />
+    <property role="TrG5h" value="SimpleStatement" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6DXTEHeFYYH" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyi" id="6DXTEHeFYYJ" role="1TKVEl">
       <property role="IQ2nx" value="7673542963543142319" />
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" node="6DXTEHeFYYL" resolve="DefaultValues" />
+      <property role="TrG5h" value="left" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6DXTEHeJCbw" role="1TKVEl">
+      <property role="IQ2nx" value="7673542963544097504" />
+      <property role="TrG5h" value="right" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="25R3W" id="6DXTEHeFYYL">
@@ -244,6 +247,18 @@
       <property role="3tVfz5" value="7673542963543142322" />
       <property role="TrG5h" value="EmptyList" />
       <property role="1L1pqM" value="[]" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6DXTEHeJKsk">
+    <property role="EcuMT" value="7673542963544131348" />
+    <property role="TrG5h" value="Predicate" />
+    <property role="R5$K7" value="true" />
+    <node concept="1TJgyj" id="6DXTEHeLJA4" role="1TKVEi">
+      <property role="IQ2ns" value="7673542963544652164" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
 </model>

@@ -11,12 +11,17 @@
     </facet>
   </facets>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+  </dependencies>
   <languageVersions>
     <language slang="l:091a9980-1f14-4985-b06a-9c8c7ccee4a2:DLTL" version="0" />
+    <language slang="l:490a9af6-490e-4908-abde-38f69766a5e3:SpecificationLogicLanguage" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
     <module reference="ec50fa8b-43d4-412e-b1cd-ef93a00fe87c(DLTL.sandbox)" version="0" />
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
   </dependencyVersions>
 </solution>
 
