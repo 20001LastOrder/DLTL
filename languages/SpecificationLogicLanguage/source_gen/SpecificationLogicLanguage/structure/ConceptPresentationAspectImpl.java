@@ -18,9 +18,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Expression;
   private ConceptPresentation props_FloatConstant;
   private ConceptPresentation props_IntegerConstant;
+  private ConceptPresentation props_NotOperation;
   private ConceptPresentation props_Predicate;
-  private ConceptPresentation props_SingleValue;
   private ConceptPresentation props_Specification;
+  private ConceptPresentation props_UnaryExpression;
   private ConceptPresentation props_Variable;
   private ConceptPresentation props_VariableReference;
 
@@ -90,6 +91,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IntegerConstant = cpb.create();
         }
         return props_IntegerConstant;
+      case LanguageConceptSwitch.NotOperation:
+        if (props_NotOperation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("not");
+          props_NotOperation = cpb.create();
+        }
+        return props_NotOperation;
       case LanguageConceptSwitch.Predicate:
         if (props_Predicate == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -97,12 +105,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Predicate = cpb.create();
         }
         return props_Predicate;
-      case LanguageConceptSwitch.SingleValue:
-        if (props_SingleValue == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_SingleValue = cpb.create();
-        }
-        return props_SingleValue;
       case LanguageConceptSwitch.Specification:
         if (props_Specification == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -110,6 +112,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Specification = cpb.create();
         }
         return props_Specification;
+      case LanguageConceptSwitch.UnaryExpression:
+        if (props_UnaryExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_UnaryExpression = cpb.create();
+        }
+        return props_UnaryExpression;
       case LanguageConceptSwitch.Variable:
         if (props_Variable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

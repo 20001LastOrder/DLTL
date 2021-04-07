@@ -18,11 +18,12 @@ public final class LanguageConceptSwitch {
   public static final int Expression = 6;
   public static final int FloatConstant = 7;
   public static final int IntegerConstant = 8;
-  public static final int Predicate = 9;
-  public static final int SingleValue = 10;
+  public static final int NotOperation = 9;
+  public static final int Predicate = 10;
   public static final int Specification = 11;
-  public static final int Variable = 12;
-  public static final int VariableReference = 13;
+  public static final int UnaryExpression = 12;
+  public static final int Variable = 13;
+  public static final int VariableReference = 14;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x490a9af6490e4908L, 0xabde38f69766a5e3L);
@@ -35,9 +36,10 @@ public final class LanguageConceptSwitch {
     builder.put(0x6a7de6ab4ec961b6L, Expression);
     builder.put(0x6a7de6ab4ec96e65L, FloatConstant);
     builder.put(0x6a7de6ab4ec96e62L, IntegerConstant);
+    builder.put(0x4c6662695c1407e7L, NotOperation);
     builder.put(0x6a7de6ab4ec9613eL, Predicate);
-    builder.put(0x6a7de6ab4ed21380L, SingleValue);
     builder.put(0x6a7de6ab4ec96ef5L, Specification);
+    builder.put(0x6a7de6ab4ed21380L, UnaryExpression);
     builder.put(0x6a7de6ab4ec96eebL, Variable);
     builder.put(0x6a7de6ab4ec961f0L, VariableReference);
     myIndex = builder.seal();

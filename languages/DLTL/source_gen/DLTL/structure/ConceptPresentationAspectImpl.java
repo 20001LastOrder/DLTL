@@ -11,11 +11,12 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_DataSetTestCase;
   private ConceptPresentation props_Dataset;
+  private ConceptPresentation props_DatasetRef;
+  private ConceptPresentation props_Metric;
+  private ConceptPresentation props_MetricRef;
   private ConceptPresentation props_Model;
-  private ConceptPresentation props_ModelReference;
+  private ConceptPresentation props_ModelRef;
   private ConceptPresentation props_Parameter;
-  private ConceptPresentation props_Predicate;
-  private ConceptPresentation props_SimpleStatement;
   private ConceptPresentation props_SingleDataTestCase;
   private ConceptPresentation props_TestCase;
   private ConceptPresentation props_TestCaseUsage;
@@ -41,6 +42,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Dataset = cpb.create();
         }
         return props_Dataset;
+      case LanguageConceptSwitch.DatasetRef:
+        if (props_DatasetRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x91a99801f144985L, 0xb06a9c8c7ccee4a2L, 0x4c6662695c18d0e0L, 0x4c6662695c18d0e1L, "ref", "", "");
+          props_DatasetRef = cpb.create();
+        }
+        return props_DatasetRef;
+      case LanguageConceptSwitch.Metric:
+        if (props_Metric == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Metric = cpb.create();
+        }
+        return props_Metric;
+      case LanguageConceptSwitch.MetricRef:
+        if (props_MetricRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("metric call");
+          props_MetricRef = cpb.create();
+        }
+        return props_MetricRef;
       case LanguageConceptSwitch.Model:
         if (props_Model == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -48,13 +70,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Model = cpb.create();
         }
         return props_Model;
-      case LanguageConceptSwitch.ModelReference:
-        if (props_ModelReference == null) {
+      case LanguageConceptSwitch.ModelRef:
+        if (props_ModelRef == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x91a99801f144985L, 0xb06a9c8c7ccee4a2L, 0x6a7de6ab4eae4a88L, 0x6a7de6ab4eae4a92L, "model", "", "");
-          props_ModelReference = cpb.create();
+          cpb.presentationByReference(0x91a99801f144985L, 0xb06a9c8c7ccee4a2L, 0x6a7de6ab4eae4a88L, 0x6a7de6ab4eae4a92L, "ref", "", "");
+          props_ModelRef = cpb.create();
         }
-        return props_ModelReference;
+        return props_ModelRef;
       case LanguageConceptSwitch.Parameter:
         if (props_Parameter == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -62,19 +84,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Parameter = cpb.create();
         }
         return props_Parameter;
-      case LanguageConceptSwitch.Predicate:
-        if (props_Predicate == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_Predicate = cpb.create();
-        }
-        return props_Predicate;
-      case LanguageConceptSwitch.SimpleStatement:
-        if (props_SimpleStatement == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("SimpleStatement");
-          props_SimpleStatement = cpb.create();
-        }
-        return props_SimpleStatement;
       case LanguageConceptSwitch.SingleDataTestCase:
         if (props_SingleDataTestCase == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

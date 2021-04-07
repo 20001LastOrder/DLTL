@@ -25,9 +25,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
   /*package*/ final ConceptDescriptor myConceptFloatConstant = createDescriptorForFloatConstant();
   /*package*/ final ConceptDescriptor myConceptIntegerConstant = createDescriptorForIntegerConstant();
+  /*package*/ final ConceptDescriptor myConceptNotOperation = createDescriptorForNotOperation();
   /*package*/ final ConceptDescriptor myConceptPredicate = createDescriptorForPredicate();
-  /*package*/ final ConceptDescriptor myConceptSingleValue = createDescriptorForSingleValue();
   /*package*/ final ConceptDescriptor myConceptSpecification = createDescriptorForSpecification();
+  /*package*/ final ConceptDescriptor myConceptUnaryExpression = createDescriptorForUnaryExpression();
   /*package*/ final ConceptDescriptor myConceptVariable = createDescriptorForVariable();
   /*package*/ final ConceptDescriptor myConceptVariableReference = createDescriptorForVariableReference();
   /*package*/ final EnumerationDescriptor myEnumerationComparator = new EnumerationDescriptor_Comparator();
@@ -48,7 +49,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBinaryComparation, myConceptBinaryConnection, myConceptBinaryExpression, myConceptBinaryOperation, myConceptBooleanConstant, myConceptConstant, myConceptExpression, myConceptFloatConstant, myConceptIntegerConstant, myConceptPredicate, myConceptSingleValue, myConceptSpecification, myConceptVariable, myConceptVariableReference);
+    return Arrays.asList(myConceptBinaryComparation, myConceptBinaryConnection, myConceptBinaryExpression, myConceptBinaryOperation, myConceptBooleanConstant, myConceptConstant, myConceptExpression, myConceptFloatConstant, myConceptIntegerConstant, myConceptNotOperation, myConceptPredicate, myConceptSpecification, myConceptUnaryExpression, myConceptVariable, myConceptVariableReference);
   }
 
   @Override
@@ -73,12 +74,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFloatConstant;
       case LanguageConceptSwitch.IntegerConstant:
         return myConceptIntegerConstant;
+      case LanguageConceptSwitch.NotOperation:
+        return myConceptNotOperation;
       case LanguageConceptSwitch.Predicate:
         return myConceptPredicate;
-      case LanguageConceptSwitch.SingleValue:
-        return myConceptSingleValue;
       case LanguageConceptSwitch.Specification:
         return myConceptSpecification;
+      case LanguageConceptSwitch.UnaryExpression:
+        return myConceptUnaryExpression;
       case LanguageConceptSwitch.Variable:
         return myConceptVariable;
       case LanguageConceptSwitch.VariableReference:
@@ -150,7 +153,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForConstant() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SpecificationLogicLanguage", "Constant", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ec961f1L);
     b.class_(false, false, false);
-    b.super_("SpecificationLogicLanguage.structure.SingleValue", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ed21380L);
+    b.super_("SpecificationLogicLanguage.structure.UnaryExpression", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ed21380L);
     b.origin("r:8a7a5bef-ede0-4188-9de3-d3c48f220b5b(SpecificationLogicLanguage.structure)/7673542963544809969");
     b.version(2);
     return b.create();
@@ -182,20 +185,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("integer");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForNotOperation() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SpecificationLogicLanguage", "NotOperation", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x4c6662695c1407e7L);
+    b.class_(false, false, false);
+    b.super_("SpecificationLogicLanguage.structure.UnaryExpression", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ed21380L);
+    b.origin("r:8a7a5bef-ede0-4188-9de3-d3c48f220b5b(SpecificationLogicLanguage.structure)/5505195799162914791");
+    b.version(2);
+    b.aggregate("expression", 0x4c6662695c1407e8L).target(0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ec961b6L).optional(false).ordered(true).multiple(false).origin("5505195799162914792").done();
+    b.alias("not");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForPredicate() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SpecificationLogicLanguage", "Predicate", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ec9613eL);
     b.class_(false, false, false);
     b.origin("r:8a7a5bef-ede0-4188-9de3-d3c48f220b5b(SpecificationLogicLanguage.structure)/7673542963544809790");
     b.version(2);
     b.aggregate("expression", 0x6a7de6ab4ec9613fL).target(0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ec961b6L).optional(false).ordered(true).multiple(false).origin("7673542963544809791").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForSingleValue() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SpecificationLogicLanguage", "SingleValue", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ed21380L);
-    b.class_(false, true, false);
-    b.super_("SpecificationLogicLanguage.structure.Expression", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ec961b6L);
-    b.origin("r:8a7a5bef-ede0-4188-9de3-d3c48f220b5b(SpecificationLogicLanguage.structure)/7673542963545379712");
-    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSpecification() {
@@ -205,6 +210,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("predicates", 0x6a7de6ab4ec96ef6L).target(0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ec9613eL).optional(true).ordered(true).multiple(true).origin("7673542963544813302").done();
     b.aggregate("variables", 0x6a7de6ab4ec96ef9L).target(0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ec96eebL).optional(true).ordered(true).multiple(true).origin("7673542963544813305").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForUnaryExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SpecificationLogicLanguage", "UnaryExpression", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ed21380L);
+    b.class_(false, true, false);
+    b.super_("SpecificationLogicLanguage.structure.Expression", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ec961b6L);
+    b.origin("r:8a7a5bef-ede0-4188-9de3-d3c48f220b5b(SpecificationLogicLanguage.structure)/7673542963545379712");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVariable() {
@@ -219,7 +232,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForVariableReference() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SpecificationLogicLanguage", "VariableReference", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ec961f0L);
     b.class_(false, false, false);
-    b.super_("SpecificationLogicLanguage.structure.SingleValue", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ed21380L);
+    b.super_("SpecificationLogicLanguage.structure.UnaryExpression", 0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ed21380L);
     b.origin("r:8a7a5bef-ede0-4188-9de3-d3c48f220b5b(SpecificationLogicLanguage.structure)/7673542963544809968");
     b.version(2);
     b.associate("ref", 0x6a7de6ab4ec96ef2L).target(0x490a9af6490e4908L, 0xabde38f69766a5e3L, 0x6a7de6ab4ec96eebL).optional(false).origin("7673542963544813298").done();

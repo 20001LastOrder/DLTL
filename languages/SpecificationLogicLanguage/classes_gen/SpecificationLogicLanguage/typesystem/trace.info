@@ -10,7 +10,84 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,52,0" name="SpecificationLogicLanguage.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,56,0" name="SpecificationLogicLanguage.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:da8cf0a1-8694-4df2-8b3e-703f79a5e326(SpecificationLogicLanguage.typesystem)/5505195799162914820">
+    <file name="TypesystemDescriptor.java">
+      <node id="5505195799162914820" at="38,5,39,84" concept="4" />
+      <node id="5505195799162914820" at="39,84,40,47" concept="2" />
+      <node id="5505195799162914820" at="37,5,41,5" concept="0" />
+      <scope id="5505195799162914820" at="38,5,40,47">
+        <var name="inferenceRule" id="5505195799162914820" />
+      </scope>
+    </file>
+    <file name="typeof_NotOperation_InferenceRule.java">
+      <node id="5505195799162917602" at="23,5,24,104" concept="4" />
+      <node id="5505195799162917602" at="24,104,25,203" concept="4" />
+      <node id="5505195799162917602" at="25,203,26,284" concept="2" />
+      <node id="5505195799162918288" at="28,5,29,54" concept="4" />
+      <node id="5505195799162918288" at="29,54,30,203" concept="4" />
+      <node id="5505195799162918288" at="30,203,31,284" concept="2" />
+      <node id="5505195799162914820" at="34,50,35,36" concept="5" />
+      <node id="5505195799162914820" at="37,68,38,102" concept="5" />
+      <node id="5505195799162914820" at="40,30,41,17" concept="5" />
+      <node id="5505195799162917622" at="43,65,44,63" concept="4" />
+      <node id="5505195799162917622" at="44,63,45,30" concept="4" />
+      <node id="5505195799162917622" at="45,30,46,230" concept="2" />
+      <node id="5505195799162917622" at="46,230,47,24" concept="5" />
+      <node id="5505195799162918313" at="49,65,50,63" concept="4" />
+      <node id="5505195799162918313" at="50,63,51,30" concept="4" />
+      <node id="5505195799162918313" at="51,30,52,230" concept="2" />
+      <node id="5505195799162918313" at="52,230,53,24" concept="5" />
+      <node id="5505195799162914820" at="57,0,58,0" concept="6" trace="expression$4GWO" />
+      <node id="5505195799162914820" at="61,0,62,0" concept="6" trace="NotOperation$6$" />
+      <node id="5505195799162914820" at="20,0,22,0" concept="1" trace="typeof_NotOperation_InferenceRule#()V" />
+      <node id="5505195799162914820" at="34,0,37,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5505195799162914820" at="37,0,40,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5505195799162914820" at="40,0,43,0" concept="3" trace="overrides#()Z" />
+      <node id="5505195799162917602" at="22,125,27,5" concept="0" />
+      <node id="5505195799162918288" at="27,5,32,5" concept="0" />
+      <node id="5505195799162917622" at="43,0,49,0" concept="7" trace="_quotation_createNode_mog4cc_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5505195799162918313" at="49,0,55,0" concept="7" trace="_quotation_createNode_mog4cc_a1a0c0b0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5505195799162914820" at="22,0,34,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5505195799162914820" at="20,46,20,46" />
+      <scope id="5505195799162914820" at="34,50,35,36" />
+      <scope id="5505195799162914820" at="37,68,38,102" />
+      <scope id="5505195799162914820" at="40,30,41,17" />
+      <scope id="5505195799162914820" at="20,0,22,0" />
+      <scope id="5505195799162917602" at="23,5,26,284">
+        <var name="_info_12389875345" id="5505195799162917602" />
+        <var name="_nodeToCheck_1029348928467" id="5505195799162917602" />
+      </scope>
+      <scope id="5505195799162918288" at="28,5,31,284">
+        <var name="_info_12389875345" id="5505195799162918288" />
+        <var name="_nodeToCheck_1029348928467" id="5505195799162918288" />
+      </scope>
+      <scope id="5505195799162914820" at="34,0,37,0" />
+      <scope id="5505195799162914820" at="37,0,40,0">
+        <var name="argument" id="5505195799162914820" />
+      </scope>
+      <scope id="5505195799162914820" at="40,0,43,0" />
+      <scope id="5505195799162917622" at="43,65,47,24">
+        <var name="facade" id="5505195799162917622" />
+        <var name="quotedNode_1" id="5505195799162917622" />
+      </scope>
+      <scope id="5505195799162918313" at="49,65,53,24">
+        <var name="facade" id="5505195799162918313" />
+        <var name="quotedNode_1" id="5505195799162918313" />
+      </scope>
+      <scope id="5505195799162917622" at="43,0,49,0" />
+      <scope id="5505195799162918313" at="49,0,55,0" />
+      <scope id="5505195799162914821" at="22,125,32,5" />
+      <scope id="5505195799162914820" at="22,0,34,0">
+        <var name="notOperation" id="5505195799162914820" />
+        <var name="status" id="5505195799162914820" />
+        <var name="typeCheckingContext" id="5505195799162914820" />
+      </scope>
+      <unit id="5505195799162914820" at="56,0,59,0" name="SpecificationLogicLanguage.typesystem.typeof_NotOperation_InferenceRule$LINKS" />
+      <unit id="5505195799162914820" at="60,0,63,0" name="SpecificationLogicLanguage.typesystem.typeof_NotOperation_InferenceRule$CONCEPTS" />
+      <unit id="5505195799162914820" at="19,0,64,0" name="SpecificationLogicLanguage.typesystem.typeof_NotOperation_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:da8cf0a1-8694-4df2-8b3e-703f79a5e326(SpecificationLogicLanguage.typesystem)/7673542963544979800">
@@ -72,10 +149,10 @@
   </root>
   <root nodeRef="r:da8cf0a1-8694-4df2-8b3e-703f79a5e326(SpecificationLogicLanguage.typesystem)/7673542963544996865">
     <file name="TypesystemDescriptor.java">
-      <node id="7673542963544996865" at="46,5,47,89" concept="4" />
-      <node id="7673542963544996865" at="47,89,48,47" concept="2" />
-      <node id="7673542963544996865" at="45,5,49,5" concept="0" />
-      <scope id="7673542963544996865" at="46,5,48,47">
+      <node id="7673542963544996865" at="50,5,51,89" concept="4" />
+      <node id="7673542963544996865" at="51,89,52,47" concept="2" />
+      <node id="7673542963544996865" at="49,5,53,5" concept="0" />
+      <scope id="7673542963544996865" at="50,5,52,47">
         <var name="inferenceRule" id="7673542963544996865" />
       </scope>
     </file>
@@ -121,10 +198,10 @@
   </root>
   <root nodeRef="r:da8cf0a1-8694-4df2-8b3e-703f79a5e326(SpecificationLogicLanguage.typesystem)/7673542963544998608">
     <file name="TypesystemDescriptor.java">
-      <node id="7673542963544998608" at="42,5,43,80" concept="4" />
-      <node id="7673542963544998608" at="43,80,44,47" concept="2" />
-      <node id="7673542963544998608" at="41,5,45,5" concept="0" />
-      <scope id="7673542963544998608" at="42,5,44,47">
+      <node id="7673542963544998608" at="46,5,47,80" concept="4" />
+      <node id="7673542963544998608" at="47,80,48,47" concept="2" />
+      <node id="7673542963544998608" at="45,5,49,5" concept="0" />
+      <scope id="7673542963544998608" at="46,5,48,47">
         <var name="inferenceRule" id="7673542963544998608" />
       </scope>
     </file>
@@ -341,10 +418,10 @@
   </root>
   <root nodeRef="r:da8cf0a1-8694-4df2-8b3e-703f79a5e326(SpecificationLogicLanguage.typesystem)/7673542963545091746">
     <file name="TypesystemDescriptor.java">
-      <node id="7673542963545091746" at="38,5,39,81" concept="4" />
-      <node id="7673542963545091746" at="39,81,40,47" concept="2" />
-      <node id="7673542963545091746" at="37,5,41,5" concept="0" />
-      <scope id="7673542963545091746" at="38,5,40,47">
+      <node id="7673542963545091746" at="42,5,43,81" concept="4" />
+      <node id="7673542963545091746" at="43,81,44,47" concept="2" />
+      <node id="7673542963545091746" at="41,5,45,5" concept="0" />
+      <scope id="7673542963545091746" at="42,5,44,47">
         <var name="inferenceRule" id="7673542963545091746" />
       </scope>
     </file>

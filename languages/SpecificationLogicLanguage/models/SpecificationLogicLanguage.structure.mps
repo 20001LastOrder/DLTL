@@ -198,7 +198,7 @@
   <node concept="1TIwiD" id="6DXTEHeMm7K">
     <property role="EcuMT" value="7673542963544809968" />
     <property role="TrG5h" value="VariableReference" />
-    <ref role="1TJDcQ" node="6DXTEHeOxe0" resolve="SingleValue" />
+    <ref role="1TJDcQ" node="6DXTEHeOxe0" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="6DXTEHeMmVM" role="1TKVEi">
       <property role="IQ2ns" value="7673542963544813298" />
       <property role="20kJfa" value="ref" />
@@ -209,7 +209,7 @@
   <node concept="1TIwiD" id="6DXTEHeMm7L">
     <property role="EcuMT" value="7673542963544809969" />
     <property role="TrG5h" value="Constant" />
-    <ref role="1TJDcQ" node="6DXTEHeOxe0" resolve="SingleValue" />
+    <ref role="1TJDcQ" node="6DXTEHeOxe0" resolve="UnaryExpression" />
   </node>
   <node concept="1TIwiD" id="6DXTEHeMmTy">
     <property role="EcuMT" value="7673542963544813154" />
@@ -281,9 +281,22 @@
   </node>
   <node concept="1TIwiD" id="6DXTEHeOxe0">
     <property role="EcuMT" value="7673542963545379712" />
-    <property role="TrG5h" value="SingleValue" />
+    <property role="TrG5h" value="UnaryExpression" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="6DXTEHeMm6Q" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="4LAoA_s50vB">
+    <property role="EcuMT" value="5505195799162914791" />
+    <property role="TrG5h" value="NotOperation" />
+    <property role="34LRSv" value="not" />
+    <ref role="1TJDcQ" node="6DXTEHeOxe0" resolve="UnaryExpression" />
+    <node concept="1TJgyj" id="4LAoA_s50vC" role="1TKVEi">
+      <property role="IQ2ns" value="5505195799162914792" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6DXTEHeMm6Q" resolve="Expression" />
+    </node>
   </node>
 </model>
 
