@@ -1,8 +1,731 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="7,0,11,0" name="DLTL.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,60,0" name="DLTL.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d1f31453-10d3-4b60-8f44-ef5976d0d9fe(DLTL.typesystem)/3232747222758883912">
+    <file name="TypesystemDescriptor.java">
+      <node id="3232747222758883912" at="38,5,39,81" concept="4" />
+      <node id="3232747222758883912" at="39,81,40,47" concept="2" />
+      <node id="3232747222758883912" at="37,5,41,5" concept="0" />
+      <scope id="3232747222758883912" at="38,5,40,47">
+        <var name="inferenceRule" id="3232747222758883912" />
+      </scope>
+    </file>
+    <file name="typeof_MetricRef_InferenceRule.java">
+      <node id="3232747222758884583" at="22,5,23,51" concept="4" />
+      <node id="3232747222758884583" at="23,51,24,181" concept="4" />
+      <node id="3232747222758884583" at="24,181,25,320" concept="2" />
+      <node id="3232747222758883912" at="28,50,29,33" concept="5" />
+      <node id="3232747222758883912" at="31,68,32,102" concept="5" />
+      <node id="3232747222758883912" at="34,30,35,17" concept="5" />
+      <node id="3232747222758883912" at="39,0,40,0" concept="6" trace="ref$cdw5" />
+      <node id="3232747222758883912" at="40,0,41,0" concept="6" trace="output$Rkt9" />
+      <node id="3232747222758883912" at="44,0,45,0" concept="6" trace="MetricRef$s4" />
+      <node id="3232747222758883912" at="19,0,21,0" concept="1" trace="typeof_MetricRef_InferenceRule#()V" />
+      <node id="3232747222758883912" at="28,0,31,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3232747222758883912" at="31,0,34,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3232747222758883912" at="34,0,37,0" concept="3" trace="overrides#()Z" />
+      <node id="3232747222758884583" at="21,122,26,5" concept="0" />
+      <node id="3232747222758883912" at="21,0,28,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="3232747222758883912" at="19,43,19,43" />
+      <scope id="3232747222758883912" at="28,50,29,33" />
+      <scope id="3232747222758883912" at="31,68,32,102" />
+      <scope id="3232747222758883912" at="34,30,35,17" />
+      <scope id="3232747222758883912" at="19,0,21,0" />
+      <scope id="3232747222758884583" at="22,5,25,320">
+        <var name="_info_12389875345" id="3232747222758884583" />
+        <var name="_nodeToCheck_1029348928467" id="3232747222758884583" />
+      </scope>
+      <scope id="3232747222758883912" at="28,0,31,0" />
+      <scope id="3232747222758883912" at="31,0,34,0">
+        <var name="argument" id="3232747222758883912" />
+      </scope>
+      <scope id="3232747222758883912" at="34,0,37,0" />
+      <scope id="3232747222758883913" at="21,122,26,5" />
+      <scope id="3232747222758883912" at="21,0,28,0">
+        <var name="metricRef" id="3232747222758883912" />
+        <var name="status" id="3232747222758883912" />
+        <var name="typeCheckingContext" id="3232747222758883912" />
+      </scope>
+      <unit id="3232747222758883912" at="43,0,46,0" name="DLTL.typesystem.typeof_MetricRef_InferenceRule$CONCEPTS" />
+      <unit id="3232747222758883912" at="38,0,42,0" name="DLTL.typesystem.typeof_MetricRef_InferenceRule$LINKS" />
+      <unit id="3232747222758883912" at="18,0,47,0" name="DLTL.typesystem.typeof_MetricRef_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d1f31453-10d3-4b60-8f44-ef5976d0d9fe(DLTL.typesystem)/5505195799162914820">
+    <file name="TypesystemDescriptor.java">
+      <node id="5505195799162914820" at="42,5,43,84" concept="4" />
+      <node id="5505195799162914820" at="43,84,44,47" concept="2" />
+      <node id="5505195799162914820" at="41,5,45,5" concept="0" />
+      <scope id="5505195799162914820" at="42,5,44,47">
+        <var name="inferenceRule" id="5505195799162914820" />
+      </scope>
+    </file>
+    <file name="typeof_NotOperation_InferenceRule.java">
+      <node id="5505195799162917602" at="23,5,24,104" concept="4" />
+      <node id="5505195799162917602" at="24,104,25,181" concept="4" />
+      <node id="5505195799162917602" at="25,181,26,262" concept="2" />
+      <node id="5505195799162918288" at="28,5,29,54" concept="4" />
+      <node id="5505195799162918288" at="29,54,30,181" concept="4" />
+      <node id="5505195799162918288" at="30,181,31,262" concept="2" />
+      <node id="5505195799162914820" at="34,50,35,36" concept="5" />
+      <node id="5505195799162914820" at="37,68,38,102" concept="5" />
+      <node id="5505195799162914820" at="40,30,41,17" concept="5" />
+      <node id="5505195799162917622" at="43,65,44,63" concept="4" />
+      <node id="5505195799162917622" at="44,63,45,30" concept="4" />
+      <node id="5505195799162917622" at="45,30,46,230" concept="2" />
+      <node id="5505195799162917622" at="46,230,47,24" concept="5" />
+      <node id="5505195799162918313" at="49,65,50,63" concept="4" />
+      <node id="5505195799162918313" at="50,63,51,30" concept="4" />
+      <node id="5505195799162918313" at="51,30,52,230" concept="2" />
+      <node id="5505195799162918313" at="52,230,53,24" concept="5" />
+      <node id="5505195799162914820" at="57,0,58,0" concept="6" trace="expression$1SC_" />
+      <node id="5505195799162914820" at="61,0,62,0" concept="6" trace="NotOperation$Ml" />
+      <node id="5505195799162914820" at="20,0,22,0" concept="1" trace="typeof_NotOperation_InferenceRule#()V" />
+      <node id="5505195799162914820" at="34,0,37,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5505195799162914820" at="37,0,40,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5505195799162914820" at="40,0,43,0" concept="3" trace="overrides#()Z" />
+      <node id="5505195799162917602" at="22,125,27,5" concept="0" />
+      <node id="5505195799162918288" at="27,5,32,5" concept="0" />
+      <node id="5505195799162917622" at="43,0,49,0" concept="7" trace="_quotation_createNode_mog4cc_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5505195799162918313" at="49,0,55,0" concept="7" trace="_quotation_createNode_mog4cc_a1a0c0b0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5505195799162914820" at="22,0,34,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5505195799162914820" at="20,46,20,46" />
+      <scope id="5505195799162914820" at="34,50,35,36" />
+      <scope id="5505195799162914820" at="37,68,38,102" />
+      <scope id="5505195799162914820" at="40,30,41,17" />
+      <scope id="5505195799162914820" at="20,0,22,0" />
+      <scope id="5505195799162917602" at="23,5,26,262">
+        <var name="_info_12389875345" id="5505195799162917602" />
+        <var name="_nodeToCheck_1029348928467" id="5505195799162917602" />
+      </scope>
+      <scope id="5505195799162918288" at="28,5,31,262">
+        <var name="_info_12389875345" id="5505195799162918288" />
+        <var name="_nodeToCheck_1029348928467" id="5505195799162918288" />
+      </scope>
+      <scope id="5505195799162914820" at="34,0,37,0" />
+      <scope id="5505195799162914820" at="37,0,40,0">
+        <var name="argument" id="5505195799162914820" />
+      </scope>
+      <scope id="5505195799162914820" at="40,0,43,0" />
+      <scope id="5505195799162917622" at="43,65,47,24">
+        <var name="facade" id="5505195799162917622" />
+        <var name="quotedNode_1" id="5505195799162917622" />
+      </scope>
+      <scope id="5505195799162918313" at="49,65,53,24">
+        <var name="facade" id="5505195799162918313" />
+        <var name="quotedNode_1" id="5505195799162918313" />
+      </scope>
+      <scope id="5505195799162917622" at="43,0,49,0" />
+      <scope id="5505195799162918313" at="49,0,55,0" />
+      <scope id="5505195799162914821" at="22,125,32,5" />
+      <scope id="5505195799162914820" at="22,0,34,0">
+        <var name="notOperation" id="5505195799162914820" />
+        <var name="status" id="5505195799162914820" />
+        <var name="typeCheckingContext" id="5505195799162914820" />
+      </scope>
+      <unit id="5505195799162914820" at="56,0,59,0" name="DLTL.typesystem.typeof_NotOperation_InferenceRule$LINKS" />
+      <unit id="5505195799162914820" at="60,0,63,0" name="DLTL.typesystem.typeof_NotOperation_InferenceRule$CONCEPTS" />
+      <unit id="5505195799162914820" at="19,0,64,0" name="DLTL.typesystem.typeof_NotOperation_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d1f31453-10d3-4b60-8f44-ef5976d0d9fe(DLTL.typesystem)/7673542963544979800">
+    <file name="TypesystemDescriptor.java">
+      <node id="7673542963544979800" at="10,5,11,89" concept="4" />
+      <node id="7673542963544979800" at="11,89,12,47" concept="2" />
+      <node id="7673542963544979800" at="9,33,13,5" concept="0" />
+      <scope id="7673542963544979800" at="10,5,12,47">
+        <var name="inferenceRule" id="7673542963544979800" />
+      </scope>
+    </file>
+    <file name="typeof_BinaryComparation_InferenceRule.java">
+      <node id="7673542963545093244" at="21,5,22,59" concept="4" />
+      <node id="7673542963545093244" at="22,59,23,181" concept="4" />
+      <node id="7673542963545093244" at="23,181,24,262" concept="2" />
+      <node id="7673542963544979800" at="27,50,28,40" concept="5" />
+      <node id="7673542963544979800" at="30,68,31,102" concept="5" />
+      <node id="7673542963544979800" at="33,30,34,17" concept="5" />
+      <node id="7673542963545093271" at="36,65,37,63" concept="4" />
+      <node id="7673542963545093271" at="37,63,38,30" concept="4" />
+      <node id="7673542963545093271" at="38,30,39,230" concept="2" />
+      <node id="7673542963545093271" at="39,230,40,24" concept="5" />
+      <node id="7673542963544979800" at="44,0,45,0" concept="6" trace="BinaryComparason$SR" />
+      <node id="7673542963544979800" at="18,0,20,0" concept="1" trace="typeof_BinaryComparation_InferenceRule#()V" />
+      <node id="7673542963544979800" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7673542963544979800" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7673542963544979800" at="33,0,36,0" concept="3" trace="overrides#()Z" />
+      <node id="7673542963545093244" at="20,130,25,5" concept="0" />
+      <node id="7673542963545093271" at="36,0,42,0" concept="7" trace="_quotation_createNode_25qnum_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7673542963544979800" at="20,0,27,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7673542963544979800" at="18,51,18,51" />
+      <scope id="7673542963544979800" at="27,50,28,40" />
+      <scope id="7673542963544979800" at="30,68,31,102" />
+      <scope id="7673542963544979800" at="33,30,34,17" />
+      <scope id="7673542963544979800" at="18,0,20,0" />
+      <scope id="7673542963545093244" at="21,5,24,262">
+        <var name="_info_12389875345" id="7673542963545093244" />
+        <var name="_nodeToCheck_1029348928467" id="7673542963545093244" />
+      </scope>
+      <scope id="7673542963544979800" at="27,0,30,0" />
+      <scope id="7673542963544979800" at="30,0,33,0">
+        <var name="argument" id="7673542963544979800" />
+      </scope>
+      <scope id="7673542963544979800" at="33,0,36,0" />
+      <scope id="7673542963545093271" at="36,65,40,24">
+        <var name="facade" id="7673542963545093271" />
+        <var name="quotedNode_1" id="7673542963545093271" />
+      </scope>
+      <scope id="7673542963544979801" at="20,130,25,5" />
+      <scope id="7673542963545093271" at="36,0,42,0" />
+      <scope id="7673542963544979800" at="20,0,27,0">
+        <var name="binaryComparation" id="7673542963544979800" />
+        <var name="status" id="7673542963544979800" />
+        <var name="typeCheckingContext" id="7673542963544979800" />
+      </scope>
+      <unit id="7673542963544979800" at="43,0,46,0" name="DLTL.typesystem.typeof_BinaryComparation_InferenceRule$CONCEPTS" />
+      <unit id="7673542963544979800" at="17,0,47,0" name="DLTL.typesystem.typeof_BinaryComparation_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d1f31453-10d3-4b60-8f44-ef5976d0d9fe(DLTL.typesystem)/7673542963544996865">
+    <file name="TypesystemDescriptor.java">
+      <node id="7673542963544996865" at="54,5,55,89" concept="4" />
+      <node id="7673542963544996865" at="55,89,56,47" concept="2" />
+      <node id="7673542963544996865" at="53,5,57,5" concept="0" />
+      <scope id="7673542963544996865" at="54,5,56,47">
+        <var name="inferenceRule" id="7673542963544996865" />
+      </scope>
+    </file>
+    <file name="typeof_VariableReference_InferenceRule.java">
+      <node id="7673542963544997724" at="21,5,22,59" concept="4" />
+      <node id="7673542963544997724" at="22,59,23,181" concept="4" />
+      <node id="7673542963544997724" at="23,181,24,398" concept="2" />
+      <node id="7673542963544996865" at="27,50,28,41" concept="5" />
+      <node id="7673542963544996865" at="30,68,31,102" concept="5" />
+      <node id="7673542963544996865" at="33,30,34,17" concept="5" />
+      <node id="7673542963544996865" at="38,0,39,0" concept="6" trace="ref$VwU1" />
+      <node id="7673542963544996865" at="42,0,43,0" concept="6" trace="VariableReference$7l" />
+      <node id="7673542963544996865" at="18,0,20,0" concept="1" trace="typeof_VariableReference_InferenceRule#()V" />
+      <node id="7673542963544996865" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7673542963544996865" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7673542963544996865" at="33,0,36,0" concept="3" trace="overrides#()Z" />
+      <node id="7673542963544997724" at="20,130,25,5" concept="0" />
+      <node id="7673542963544996865" at="20,0,27,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7673542963544996865" at="18,51,18,51" />
+      <scope id="7673542963544996865" at="27,50,28,41" />
+      <scope id="7673542963544996865" at="30,68,31,102" />
+      <scope id="7673542963544996865" at="33,30,34,17" />
+      <scope id="7673542963544996865" at="18,0,20,0" />
+      <scope id="7673542963544997724" at="21,5,24,398">
+        <var name="_info_12389875345" id="7673542963544997724" />
+        <var name="_nodeToCheck_1029348928467" id="7673542963544997724" />
+      </scope>
+      <scope id="7673542963544996865" at="27,0,30,0" />
+      <scope id="7673542963544996865" at="30,0,33,0">
+        <var name="argument" id="7673542963544996865" />
+      </scope>
+      <scope id="7673542963544996865" at="33,0,36,0" />
+      <scope id="7673542963544996866" at="20,130,25,5" />
+      <scope id="7673542963544996865" at="20,0,27,0">
+        <var name="status" id="7673542963544996865" />
+        <var name="typeCheckingContext" id="7673542963544996865" />
+        <var name="variableReference" id="7673542963544996865" />
+      </scope>
+      <unit id="7673542963544996865" at="37,0,40,0" name="DLTL.typesystem.typeof_VariableReference_InferenceRule$LINKS" />
+      <unit id="7673542963544996865" at="41,0,44,0" name="DLTL.typesystem.typeof_VariableReference_InferenceRule$CONCEPTS" />
+      <unit id="7673542963544996865" at="17,0,45,0" name="DLTL.typesystem.typeof_VariableReference_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d1f31453-10d3-4b60-8f44-ef5976d0d9fe(DLTL.typesystem)/7673542963544998608">
+    <file name="TypesystemDescriptor.java">
+      <node id="7673542963544998608" at="50,5,51,80" concept="4" />
+      <node id="7673542963544998608" at="51,80,52,47" concept="2" />
+      <node id="7673542963544998608" at="49,5,53,5" concept="0" />
+      <scope id="7673542963544998608" at="50,5,52,47">
+        <var name="inferenceRule" id="7673542963544998608" />
+      </scope>
+    </file>
+    <file name="typeof_Variable_InferenceRule.java">
+      <node id="7673542963544999353" at="21,5,22,50" concept="4" />
+      <node id="7673542963544999353" at="22,50,23,181" concept="4" />
+      <node id="7673542963544999353" at="23,181,24,274" concept="2" />
+      <node id="7673542963544998608" at="27,50,28,32" concept="5" />
+      <node id="7673542963544998608" at="30,68,31,102" concept="5" />
+      <node id="7673542963544998608" at="33,30,34,17" concept="5" />
+      <node id="7673542963544998608" at="38,0,39,0" concept="6" trace="type$iMEC" />
+      <node id="7673542963544998608" at="42,0,43,0" concept="6" trace="Variable$$Z" />
+      <node id="7673542963544998608" at="18,0,20,0" concept="1" trace="typeof_Variable_InferenceRule#()V" />
+      <node id="7673542963544998608" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7673542963544998608" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7673542963544998608" at="33,0,36,0" concept="3" trace="overrides#()Z" />
+      <node id="7673542963544999353" at="20,121,25,5" concept="0" />
+      <node id="7673542963544998608" at="20,0,27,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7673542963544998608" at="18,42,18,42" />
+      <scope id="7673542963544998608" at="27,50,28,32" />
+      <scope id="7673542963544998608" at="30,68,31,102" />
+      <scope id="7673542963544998608" at="33,30,34,17" />
+      <scope id="7673542963544998608" at="18,0,20,0" />
+      <scope id="7673542963544999353" at="21,5,24,274">
+        <var name="_info_12389875345" id="7673542963544999353" />
+        <var name="_nodeToCheck_1029348928467" id="7673542963544999353" />
+      </scope>
+      <scope id="7673542963544998608" at="27,0,30,0" />
+      <scope id="7673542963544998608" at="30,0,33,0">
+        <var name="argument" id="7673542963544998608" />
+      </scope>
+      <scope id="7673542963544998608" at="33,0,36,0" />
+      <scope id="7673542963544998609" at="20,121,25,5" />
+      <scope id="7673542963544998608" at="20,0,27,0">
+        <var name="status" id="7673542963544998608" />
+        <var name="typeCheckingContext" id="7673542963544998608" />
+        <var name="variable" id="7673542963544998608" />
+      </scope>
+      <unit id="7673542963544998608" at="37,0,40,0" name="DLTL.typesystem.typeof_Variable_InferenceRule$LINKS" />
+      <unit id="7673542963544998608" at="41,0,44,0" name="DLTL.typesystem.typeof_Variable_InferenceRule$CONCEPTS" />
+      <unit id="7673542963544998608" at="17,0,45,0" name="DLTL.typesystem.typeof_Variable_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d1f31453-10d3-4b60-8f44-ef5976d0d9fe(DLTL.typesystem)/7673542963545002135">
+    <file name="TypesystemDescriptor.java">
+      <node id="7673542963545002135" at="34,5,35,87" concept="4" />
+      <node id="7673542963545002135" at="35,87,36,47" concept="2" />
+      <node id="7673542963545002135" at="33,5,37,5" concept="0" />
+      <scope id="7673542963545002135" at="34,5,36,47">
+        <var name="inferenceRule" id="7673542963545002135" />
+      </scope>
+    </file>
+    <file name="typeof_IntegerConstant_InferenceRule.java">
+      <node id="7673542963545002741" at="21,5,22,57" concept="4" />
+      <node id="7673542963545002741" at="22,57,23,181" concept="4" />
+      <node id="7673542963545002741" at="23,181,24,262" concept="2" />
+      <node id="7673542963545002135" at="27,50,28,39" concept="5" />
+      <node id="7673542963545002135" at="30,68,31,102" concept="5" />
+      <node id="7673542963545002135" at="33,30,34,17" concept="5" />
+      <node id="7673542963545002769" at="36,65,37,63" concept="4" />
+      <node id="7673542963545002769" at="37,63,38,30" concept="4" />
+      <node id="7673542963545002769" at="38,30,39,230" concept="2" />
+      <node id="7673542963545002769" at="39,230,40,24" concept="5" />
+      <node id="7673542963545002135" at="44,0,45,0" concept="6" trace="IntegerConstant$oT" />
+      <node id="7673542963545002135" at="18,0,20,0" concept="1" trace="typeof_IntegerConstant_InferenceRule#()V" />
+      <node id="7673542963545002135" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7673542963545002135" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7673542963545002135" at="33,0,36,0" concept="3" trace="overrides#()Z" />
+      <node id="7673542963545002741" at="20,128,25,5" concept="0" />
+      <node id="7673542963545002769" at="36,0,42,0" concept="7" trace="_quotation_createNode_1e09r9_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7673542963545002135" at="20,0,27,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7673542963545002135" at="18,49,18,49" />
+      <scope id="7673542963545002135" at="27,50,28,39" />
+      <scope id="7673542963545002135" at="30,68,31,102" />
+      <scope id="7673542963545002135" at="33,30,34,17" />
+      <scope id="7673542963545002135" at="18,0,20,0" />
+      <scope id="7673542963545002741" at="21,5,24,262">
+        <var name="_info_12389875345" id="7673542963545002741" />
+        <var name="_nodeToCheck_1029348928467" id="7673542963545002741" />
+      </scope>
+      <scope id="7673542963545002135" at="27,0,30,0" />
+      <scope id="7673542963545002135" at="30,0,33,0">
+        <var name="argument" id="7673542963545002135" />
+      </scope>
+      <scope id="7673542963545002135" at="33,0,36,0" />
+      <scope id="7673542963545002769" at="36,65,40,24">
+        <var name="facade" id="7673542963545002769" />
+        <var name="quotedNode_1" id="7673542963545002769" />
+      </scope>
+      <scope id="7673542963545002136" at="20,128,25,5" />
+      <scope id="7673542963545002769" at="36,0,42,0" />
+      <scope id="7673542963545002135" at="20,0,27,0">
+        <var name="integerConstant" id="7673542963545002135" />
+        <var name="status" id="7673542963545002135" />
+        <var name="typeCheckingContext" id="7673542963545002135" />
+      </scope>
+      <unit id="7673542963545002135" at="43,0,46,0" name="DLTL.typesystem.typeof_IntegerConstant_InferenceRule$CONCEPTS" />
+      <unit id="7673542963545002135" at="17,0,47,0" name="DLTL.typesystem.typeof_IntegerConstant_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d1f31453-10d3-4b60-8f44-ef5976d0d9fe(DLTL.typesystem)/7673542963545002884">
+    <file name="TypesystemDescriptor.java">
+      <node id="7673542963545002884" at="30,5,31,85" concept="4" />
+      <node id="7673542963545002884" at="31,85,32,47" concept="2" />
+      <node id="7673542963545002884" at="29,5,33,5" concept="0" />
+      <scope id="7673542963545002884" at="30,5,32,47">
+        <var name="inferenceRule" id="7673542963545002884" />
+      </scope>
+    </file>
+    <file name="typeof_FloatConstant_InferenceRule.java">
+      <node id="7673542963545003590" at="21,5,22,55" concept="4" />
+      <node id="7673542963545003590" at="22,55,23,181" concept="4" />
+      <node id="7673542963545003590" at="23,181,24,262" concept="2" />
+      <node id="7673542963545002884" at="27,50,28,37" concept="5" />
+      <node id="7673542963545002884" at="30,68,31,102" concept="5" />
+      <node id="7673542963545002884" at="33,30,34,17" concept="5" />
+      <node id="7673542963545003606" at="36,65,37,63" concept="4" />
+      <node id="7673542963545003606" at="37,63,38,30" concept="4" />
+      <node id="7673542963545003606" at="38,30,39,228" concept="2" />
+      <node id="7673542963545003606" at="39,228,40,24" concept="5" />
+      <node id="7673542963545002884" at="44,0,45,0" concept="6" trace="FloatConstant$qm" />
+      <node id="7673542963545002884" at="18,0,20,0" concept="1" trace="typeof_FloatConstant_InferenceRule#()V" />
+      <node id="7673542963545002884" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7673542963545002884" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7673542963545002884" at="33,0,36,0" concept="3" trace="overrides#()Z" />
+      <node id="7673542963545003590" at="20,126,25,5" concept="0" />
+      <node id="7673542963545003606" at="36,0,42,0" concept="7" trace="_quotation_createNode_4hrtv8_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7673542963545002884" at="20,0,27,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7673542963545002884" at="18,47,18,47" />
+      <scope id="7673542963545002884" at="27,50,28,37" />
+      <scope id="7673542963545002884" at="30,68,31,102" />
+      <scope id="7673542963545002884" at="33,30,34,17" />
+      <scope id="7673542963545002884" at="18,0,20,0" />
+      <scope id="7673542963545003590" at="21,5,24,262">
+        <var name="_info_12389875345" id="7673542963545003590" />
+        <var name="_nodeToCheck_1029348928467" id="7673542963545003590" />
+      </scope>
+      <scope id="7673542963545002884" at="27,0,30,0" />
+      <scope id="7673542963545002884" at="30,0,33,0">
+        <var name="argument" id="7673542963545002884" />
+      </scope>
+      <scope id="7673542963545002884" at="33,0,36,0" />
+      <scope id="7673542963545003606" at="36,65,40,24">
+        <var name="facade" id="7673542963545003606" />
+        <var name="quotedNode_1" id="7673542963545003606" />
+      </scope>
+      <scope id="7673542963545002885" at="20,126,25,5" />
+      <scope id="7673542963545003606" at="36,0,42,0" />
+      <scope id="7673542963545002884" at="20,0,27,0">
+        <var name="floatConstant" id="7673542963545002884" />
+        <var name="status" id="7673542963545002884" />
+        <var name="typeCheckingContext" id="7673542963545002884" />
+      </scope>
+      <unit id="7673542963545002884" at="43,0,46,0" name="DLTL.typesystem.typeof_FloatConstant_InferenceRule$CONCEPTS" />
+      <unit id="7673542963545002884" at="17,0,47,0" name="DLTL.typesystem.typeof_FloatConstant_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d1f31453-10d3-4b60-8f44-ef5976d0d9fe(DLTL.typesystem)/7673542963545003721">
+    <file name="TypesystemDescriptor.java">
+      <node id="7673542963545003721" at="26,5,27,87" concept="4" />
+      <node id="7673542963545003721" at="27,87,28,47" concept="2" />
+      <node id="7673542963545003721" at="25,5,29,5" concept="0" />
+      <scope id="7673542963545003721" at="26,5,28,47">
+        <var name="inferenceRule" id="7673542963545003721" />
+      </scope>
+    </file>
+    <file name="typeof_BooleanConstant_InferenceRule.java">
+      <node id="7673542963545004435" at="21,5,22,57" concept="4" />
+      <node id="7673542963545004435" at="22,57,23,181" concept="4" />
+      <node id="7673542963545004435" at="23,181,24,262" concept="2" />
+      <node id="7673542963545003721" at="27,50,28,39" concept="5" />
+      <node id="7673542963545003721" at="30,68,31,102" concept="5" />
+      <node id="7673542963545003721" at="33,30,34,17" concept="5" />
+      <node id="7673542963545004451" at="36,65,37,63" concept="4" />
+      <node id="7673542963545004451" at="37,63,38,30" concept="4" />
+      <node id="7673542963545004451" at="38,30,39,230" concept="2" />
+      <node id="7673542963545004451" at="39,230,40,24" concept="5" />
+      <node id="7673542963545003721" at="44,0,45,0" concept="6" trace="BooleanConstant$oS" />
+      <node id="7673542963545003721" at="18,0,20,0" concept="1" trace="typeof_BooleanConstant_InferenceRule#()V" />
+      <node id="7673542963545003721" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7673542963545003721" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7673542963545003721" at="33,0,36,0" concept="3" trace="overrides#()Z" />
+      <node id="7673542963545004435" at="20,128,25,5" concept="0" />
+      <node id="7673542963545004451" at="36,0,42,0" concept="7" trace="_quotation_createNode_n57196_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7673542963545003721" at="20,0,27,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7673542963545003721" at="18,49,18,49" />
+      <scope id="7673542963545003721" at="27,50,28,39" />
+      <scope id="7673542963545003721" at="30,68,31,102" />
+      <scope id="7673542963545003721" at="33,30,34,17" />
+      <scope id="7673542963545003721" at="18,0,20,0" />
+      <scope id="7673542963545004435" at="21,5,24,262">
+        <var name="_info_12389875345" id="7673542963545004435" />
+        <var name="_nodeToCheck_1029348928467" id="7673542963545004435" />
+      </scope>
+      <scope id="7673542963545003721" at="27,0,30,0" />
+      <scope id="7673542963545003721" at="30,0,33,0">
+        <var name="argument" id="7673542963545003721" />
+      </scope>
+      <scope id="7673542963545003721" at="33,0,36,0" />
+      <scope id="7673542963545004451" at="36,65,40,24">
+        <var name="facade" id="7673542963545004451" />
+        <var name="quotedNode_1" id="7673542963545004451" />
+      </scope>
+      <scope id="7673542963545003722" at="20,128,25,5" />
+      <scope id="7673542963545004451" at="36,0,42,0" />
+      <scope id="7673542963545003721" at="20,0,27,0">
+        <var name="booleanConstant" id="7673542963545003721" />
+        <var name="status" id="7673542963545003721" />
+        <var name="typeCheckingContext" id="7673542963545003721" />
+      </scope>
+      <unit id="7673542963545003721" at="43,0,46,0" name="DLTL.typesystem.typeof_BooleanConstant_InferenceRule$CONCEPTS" />
+      <unit id="7673542963545003721" at="17,0,47,0" name="DLTL.typesystem.typeof_BooleanConstant_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d1f31453-10d3-4b60-8f44-ef5976d0d9fe(DLTL.typesystem)/7673542963545091746">
+    <file name="TypesystemDescriptor.java">
+      <node id="7673542963545091746" at="46,5,47,81" concept="4" />
+      <node id="7673542963545091746" at="47,81,48,47" concept="2" />
+      <node id="7673542963545091746" at="45,5,49,5" concept="0" />
+      <scope id="7673542963545091746" at="46,5,48,47">
+        <var name="inferenceRule" id="7673542963545091746" />
+      </scope>
+    </file>
+    <file name="typeof_Predicate_InferenceRule.java">
+      <node id="7673542963545196673" at="23,5,24,51" concept="4" />
+      <node id="7673542963545196673" at="24,51,25,181" concept="4" />
+      <node id="7673542963545196673" at="25,181,26,397" concept="2" />
+      <node id="7673542963545092552" at="28,5,29,51" concept="4" />
+      <node id="7673542963545092552" at="29,51,30,181" concept="4" />
+      <node id="7673542963545092552" at="30,181,31,262" concept="2" />
+      <node id="7673542963545091746" at="34,50,35,33" concept="5" />
+      <node id="7673542963545091746" at="37,68,38,102" concept="5" />
+      <node id="7673542963545091746" at="40,30,41,17" concept="5" />
+      <node id="7673542963545092568" at="43,65,44,63" concept="4" />
+      <node id="7673542963545092568" at="44,63,45,30" concept="4" />
+      <node id="7673542963545092568" at="45,30,46,230" concept="2" />
+      <node id="7673542963545092568" at="46,230,47,24" concept="5" />
+      <node id="7673542963545091746" at="51,0,52,0" concept="6" trace="expression$yAf5" />
+      <node id="7673542963545091746" at="55,0,56,0" concept="6" trace="Predicate$dy" />
+      <node id="7673542963545091746" at="20,0,22,0" concept="1" trace="typeof_Predicate_InferenceRule#()V" />
+      <node id="7673542963545091746" at="34,0,37,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7673542963545091746" at="37,0,40,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7673542963545091746" at="40,0,43,0" concept="3" trace="overrides#()Z" />
+      <node id="7673542963545196673" at="22,122,27,5" concept="0" />
+      <node id="7673542963545092552" at="27,5,32,5" concept="0" />
+      <node id="7673542963545092568" at="43,0,49,0" concept="7" trace="_quotation_createNode_6usq3j_a1a0c0b0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7673542963545091746" at="22,0,34,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7673542963545091746" at="20,43,20,43" />
+      <scope id="7673542963545091746" at="34,50,35,33" />
+      <scope id="7673542963545091746" at="37,68,38,102" />
+      <scope id="7673542963545091746" at="40,30,41,17" />
+      <scope id="7673542963545091746" at="20,0,22,0" />
+      <scope id="7673542963545196673" at="23,5,26,397">
+        <var name="_info_12389875345" id="7673542963545196673" />
+        <var name="_nodeToCheck_1029348928467" id="7673542963545196673" />
+      </scope>
+      <scope id="7673542963545092552" at="28,5,31,262">
+        <var name="_info_12389875345" id="7673542963545092552" />
+        <var name="_nodeToCheck_1029348928467" id="7673542963545092552" />
+      </scope>
+      <scope id="7673542963545091746" at="34,0,37,0" />
+      <scope id="7673542963545091746" at="37,0,40,0">
+        <var name="argument" id="7673542963545091746" />
+      </scope>
+      <scope id="7673542963545091746" at="40,0,43,0" />
+      <scope id="7673542963545092568" at="43,65,47,24">
+        <var name="facade" id="7673542963545092568" />
+        <var name="quotedNode_1" id="7673542963545092568" />
+      </scope>
+      <scope id="7673542963545092568" at="43,0,49,0" />
+      <scope id="7673542963545091747" at="22,122,32,5" />
+      <scope id="7673542963545091746" at="22,0,34,0">
+        <var name="predicate" id="7673542963545091746" />
+        <var name="status" id="7673542963545091746" />
+        <var name="typeCheckingContext" id="7673542963545091746" />
+      </scope>
+      <unit id="7673542963545091746" at="50,0,53,0" name="DLTL.typesystem.typeof_Predicate_InferenceRule$LINKS" />
+      <unit id="7673542963545091746" at="54,0,57,0" name="DLTL.typesystem.typeof_Predicate_InferenceRule$CONCEPTS" />
+      <unit id="7673542963545091746" at="19,0,58,0" name="DLTL.typesystem.typeof_Predicate_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d1f31453-10d3-4b60-8f44-ef5976d0d9fe(DLTL.typesystem)/7673542963545093470">
+    <file name="TypesystemDescriptor.java">
+      <node id="7673542963545093470" at="14,5,15,88" concept="4" />
+      <node id="7673542963545093470" at="15,88,16,47" concept="2" />
+      <node id="7673542963545093470" at="13,5,17,5" concept="0" />
+      <scope id="7673542963545093470" at="14,5,16,47">
+        <var name="inferenceRule" id="7673542963545093470" />
+      </scope>
+    </file>
+    <file name="typeof_BinaryConnection_InferenceRule.java">
+      <node id="7673542963545097242" at="23,5,24,102" concept="4" />
+      <node id="7673542963545097242" at="24,102,25,181" concept="4" />
+      <node id="7673542963545097242" at="25,181,26,262" concept="2" />
+      <node id="7673542963545099251" at="28,5,29,103" concept="4" />
+      <node id="7673542963545099251" at="29,103,30,181" concept="4" />
+      <node id="7673542963545099251" at="30,181,31,262" concept="2" />
+      <node id="7673542963545102736" at="33,5,34,58" concept="4" />
+      <node id="7673542963545102736" at="34,58,35,181" concept="4" />
+      <node id="7673542963545102736" at="35,181,36,262" concept="2" />
+      <node id="7673542963545093470" at="39,50,40,40" concept="5" />
+      <node id="7673542963545093470" at="42,68,43,102" concept="5" />
+      <node id="7673542963545093470" at="45,30,46,17" concept="5" />
+      <node id="7673542963545097262" at="48,65,49,63" concept="4" />
+      <node id="7673542963545097262" at="49,63,50,30" concept="4" />
+      <node id="7673542963545097262" at="50,30,51,230" concept="2" />
+      <node id="7673542963545097262" at="51,230,52,24" concept="5" />
+      <node id="7673542963545099280" at="54,65,55,63" concept="4" />
+      <node id="7673542963545099280" at="55,63,56,30" concept="4" />
+      <node id="7673542963545099280" at="56,30,57,230" concept="2" />
+      <node id="7673542963545099280" at="57,230,58,24" concept="5" />
+      <node id="7673542963545102793" at="60,65,61,63" concept="4" />
+      <node id="7673542963545102793" at="61,63,62,30" concept="4" />
+      <node id="7673542963545102793" at="62,30,63,230" concept="2" />
+      <node id="7673542963545102793" at="63,230,64,24" concept="5" />
+      <node id="7673542963545093470" at="68,0,69,0" concept="6" trace="left$CP7_" />
+      <node id="7673542963545093470" at="69,0,70,0" concept="6" trace="right$CP_B" />
+      <node id="7673542963545093470" at="73,0,74,0" concept="6" trace="BinaryConnection$Rm" />
+      <node id="7673542963545093470" at="20,0,22,0" concept="1" trace="typeof_BinaryConnection_InferenceRule#()V" />
+      <node id="7673542963545093470" at="39,0,42,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7673542963545093470" at="42,0,45,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7673542963545093470" at="45,0,48,0" concept="3" trace="overrides#()Z" />
+      <node id="7673542963545097242" at="22,129,27,5" concept="0" />
+      <node id="7673542963545099251" at="27,5,32,5" concept="0" />
+      <node id="7673542963545102736" at="32,5,37,5" concept="0" />
+      <node id="7673542963545097262" at="48,0,54,0" concept="7" trace="_quotation_createNode_95ktld_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7673542963545099280" at="54,0,60,0" concept="7" trace="_quotation_createNode_95ktld_a1a0c0b0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7673542963545102793" at="60,0,66,0" concept="7" trace="_quotation_createNode_95ktld_a1a0c0c0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7673542963545093470" at="22,0,39,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7673542963545093470" at="20,50,20,50" />
+      <scope id="7673542963545093470" at="39,50,40,40" />
+      <scope id="7673542963545093470" at="42,68,43,102" />
+      <scope id="7673542963545093470" at="45,30,46,17" />
+      <scope id="7673542963545093470" at="20,0,22,0" />
+      <scope id="7673542963545097242" at="23,5,26,262">
+        <var name="_info_12389875345" id="7673542963545097242" />
+        <var name="_nodeToCheck_1029348928467" id="7673542963545097242" />
+      </scope>
+      <scope id="7673542963545099251" at="28,5,31,262">
+        <var name="_info_12389875345" id="7673542963545099251" />
+        <var name="_nodeToCheck_1029348928467" id="7673542963545099251" />
+      </scope>
+      <scope id="7673542963545102736" at="33,5,36,262">
+        <var name="_info_12389875345" id="7673542963545102736" />
+        <var name="_nodeToCheck_1029348928467" id="7673542963545102736" />
+      </scope>
+      <scope id="7673542963545093470" at="39,0,42,0" />
+      <scope id="7673542963545093470" at="42,0,45,0">
+        <var name="argument" id="7673542963545093470" />
+      </scope>
+      <scope id="7673542963545093470" at="45,0,48,0" />
+      <scope id="7673542963545097262" at="48,65,52,24">
+        <var name="facade" id="7673542963545097262" />
+        <var name="quotedNode_1" id="7673542963545097262" />
+      </scope>
+      <scope id="7673542963545099280" at="54,65,58,24">
+        <var name="facade" id="7673542963545099280" />
+        <var name="quotedNode_1" id="7673542963545099280" />
+      </scope>
+      <scope id="7673542963545102793" at="60,65,64,24">
+        <var name="facade" id="7673542963545102793" />
+        <var name="quotedNode_1" id="7673542963545102793" />
+      </scope>
+      <scope id="7673542963545097262" at="48,0,54,0" />
+      <scope id="7673542963545099280" at="54,0,60,0" />
+      <scope id="7673542963545102793" at="60,0,66,0" />
+      <scope id="7673542963545093471" at="22,129,37,5" />
+      <scope id="7673542963545093470" at="22,0,39,0">
+        <var name="binaryConnection" id="7673542963545093470" />
+        <var name="status" id="7673542963545093470" />
+        <var name="typeCheckingContext" id="7673542963545093470" />
+      </scope>
+      <unit id="7673542963545093470" at="72,0,75,0" name="DLTL.typesystem.typeof_BinaryConnection_InferenceRule$CONCEPTS" />
+      <unit id="7673542963545093470" at="67,0,71,0" name="DLTL.typesystem.typeof_BinaryConnection_InferenceRule$LINKS" />
+      <unit id="7673542963545093470" at="19,0,76,0" name="DLTL.typesystem.typeof_BinaryConnection_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d1f31453-10d3-4b60-8f44-ef5976d0d9fe(DLTL.typesystem)/7673542963545102908">
+    <file name="TypesystemDescriptor.java">
+      <node id="7673542963545102908" at="18,5,19,88" concept="4" />
+      <node id="7673542963545102908" at="19,88,20,47" concept="2" />
+      <node id="7673542963545102908" at="17,5,21,5" concept="0" />
+      <scope id="7673542963545102908" at="18,5,20,47">
+        <var name="inferenceRule" id="7673542963545102908" />
+      </scope>
+    </file>
+    <file name="typeof_BinaryExpression_InferenceRule.java">
+      <node id="3232747222754760293" at="21,5,22,102" concept="4" />
+      <node id="3232747222754760293" at="22,102,23,181" concept="4" />
+      <node id="3232747222754760293" at="23,181,24,416" concept="2" />
+      <node id="7673542963545102908" at="27,50,28,40" concept="5" />
+      <node id="7673542963545102908" at="30,68,31,102" concept="5" />
+      <node id="7673542963545102908" at="33,30,34,17" concept="5" />
+      <node id="7673542963545102908" at="38,0,39,0" concept="6" trace="left$CP7_" />
+      <node id="7673542963545102908" at="39,0,40,0" concept="6" trace="right$CP_B" />
+      <node id="7673542963545102908" at="43,0,44,0" concept="6" trace="BinaryExpression$Fj" />
+      <node id="7673542963545102908" at="18,0,20,0" concept="1" trace="typeof_BinaryExpression_InferenceRule#()V" />
+      <node id="7673542963545102908" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7673542963545102908" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7673542963545102908" at="33,0,36,0" concept="3" trace="overrides#()Z" />
+      <node id="3232747222754760293" at="20,129,25,5" concept="0" />
+      <node id="7673542963545102908" at="20,0,27,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7673542963545102908" at="18,50,18,50" />
+      <scope id="7673542963545102908" at="27,50,28,40" />
+      <scope id="7673542963545102908" at="30,68,31,102" />
+      <scope id="7673542963545102908" at="33,30,34,17" />
+      <scope id="7673542963545102908" at="18,0,20,0" />
+      <scope id="3232747222754760293" at="21,5,24,416">
+        <var name="_info_12389875345" id="3232747222754760293" />
+        <var name="_nodeToCheck_1029348928467" id="3232747222754760293" />
+      </scope>
+      <scope id="7673542963545102908" at="27,0,30,0" />
+      <scope id="7673542963545102908" at="30,0,33,0">
+        <var name="argument" id="7673542963545102908" />
+      </scope>
+      <scope id="7673542963545102908" at="33,0,36,0" />
+      <scope id="7673542963545102909" at="20,129,25,5" />
+      <scope id="7673542963545102908" at="20,0,27,0">
+        <var name="binaryExpression" id="7673542963545102908" />
+        <var name="status" id="7673542963545102908" />
+        <var name="typeCheckingContext" id="7673542963545102908" />
+      </scope>
+      <unit id="7673542963545102908" at="42,0,45,0" name="DLTL.typesystem.typeof_BinaryExpression_InferenceRule$CONCEPTS" />
+      <unit id="7673542963545102908" at="37,0,41,0" name="DLTL.typesystem.typeof_BinaryExpression_InferenceRule$LINKS" />
+      <unit id="7673542963545102908" at="17,0,46,0" name="DLTL.typesystem.typeof_BinaryExpression_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:d1f31453-10d3-4b60-8f44-ef5976d0d9fe(DLTL.typesystem)/7673542963545103737">
+    <file name="TypesystemDescriptor.java">
+      <node id="7673542963545103737" at="22,5,23,87" concept="4" />
+      <node id="7673542963545103737" at="23,87,24,47" concept="2" />
+      <node id="7673542963545103737" at="21,5,25,5" concept="0" />
+      <scope id="7673542963545103737" at="22,5,24,47">
+        <var name="inferenceRule" id="7673542963545103737" />
+      </scope>
+    </file>
+    <file name="typeof_BinaryOperation_InferenceRule.java">
+      <node id="7673542963545104276" at="21,5,22,57" concept="4" />
+      <node id="7673542963545104276" at="22,57,23,181" concept="4" />
+      <node id="7673542963545104276" at="23,181,24,397" concept="2" />
+      <node id="7673542963545103737" at="27,50,28,39" concept="5" />
+      <node id="7673542963545103737" at="30,68,31,102" concept="5" />
+      <node id="7673542963545103737" at="33,30,34,17" concept="5" />
+      <node id="7673542963545103737" at="38,0,39,0" concept="6" trace="left$CP7_" />
+      <node id="7673542963545103737" at="42,0,43,0" concept="6" trace="BinaryOperation$_U" />
+      <node id="7673542963545103737" at="18,0,20,0" concept="1" trace="typeof_BinaryOperation_InferenceRule#()V" />
+      <node id="7673542963545103737" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7673542963545103737" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7673542963545103737" at="33,0,36,0" concept="3" trace="overrides#()Z" />
+      <node id="7673542963545104276" at="20,128,25,5" concept="0" />
+      <node id="7673542963545103737" at="20,0,27,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7673542963545103737" at="18,49,18,49" />
+      <scope id="7673542963545103737" at="27,50,28,39" />
+      <scope id="7673542963545103737" at="30,68,31,102" />
+      <scope id="7673542963545103737" at="33,30,34,17" />
+      <scope id="7673542963545103737" at="18,0,20,0" />
+      <scope id="7673542963545104276" at="21,5,24,397">
+        <var name="_info_12389875345" id="7673542963545104276" />
+        <var name="_nodeToCheck_1029348928467" id="7673542963545104276" />
+      </scope>
+      <scope id="7673542963545103737" at="27,0,30,0" />
+      <scope id="7673542963545103737" at="30,0,33,0">
+        <var name="argument" id="7673542963545103737" />
+      </scope>
+      <scope id="7673542963545103737" at="33,0,36,0" />
+      <scope id="7673542963545103738" at="20,128,25,5" />
+      <scope id="7673542963545103737" at="20,0,27,0">
+        <var name="binaryOperation" id="7673542963545103737" />
+        <var name="status" id="7673542963545103737" />
+        <var name="typeCheckingContext" id="7673542963545103737" />
+      </scope>
+      <unit id="7673542963545103737" at="37,0,40,0" name="DLTL.typesystem.typeof_BinaryOperation_InferenceRule$LINKS" />
+      <unit id="7673542963545103737" at="41,0,44,0" name="DLTL.typesystem.typeof_BinaryOperation_InferenceRule$CONCEPTS" />
+      <unit id="7673542963545103737" at="17,0,45,0" name="DLTL.typesystem.typeof_BinaryOperation_InferenceRule" />
     </file>
   </root>
 </debug-info>

@@ -7,21 +7,14 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="qbzd" ref="r:892f7aaa-1f94-4be5-a872-740f44068c69(DLTL.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
-        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
-        <property id="672037151186491528" name="presentation" index="1L1pqM" />
-      </concept>
-      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
-        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
-        <child id="3348158742936976577" name="members" index="25R1y" />
-      </concept>
-      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
-        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -51,6 +44,10 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -58,195 +55,198 @@
   </registry>
   <node concept="1TIwiD" id="6DXTEHeMm4Y">
     <property role="EcuMT" value="7673542963544809790" />
-    <property role="TrG5h" value="Predicate" />
+    <property role="TrG5h" value="Predicate_old" />
+    <property role="3GE5qa" value="logic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6DXTEHeMm4Z" role="1TKVEi">
       <property role="IQ2ns" value="7673542963544809791" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6DXTEHeMm6Q" resolve="Expression" />
+      <property role="20kJfa" value="expression_old" />
+      <ref role="20lvS9" node="6DXTEHeMm6Q" resolve="Expression_old" />
+      <node concept="asaX9" id="2Nt1By$UHyL" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;DLTL.structure.Predicate&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="2Nt1By$UHvb" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMm6K">
     <property role="EcuMT" value="7673542963544809904" />
-    <property role="TrG5h" value="BinaryExpression" />
+    <property role="TrG5h" value="BinaryExpression_old" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="6DXTEHeMm6Q" resolve="Expression" />
+    <property role="3GE5qa" value="logic" />
+    <ref role="1TJDcQ" to="qbzd:6DXTEHeMm6Q" resolve="Expression" />
     <node concept="1TJgyj" id="6DXTEHeMm6L" role="1TKVEi">
       <property role="IQ2ns" value="7673542963544809905" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="left" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6DXTEHeMm6Q" resolve="Expression" />
+      <property role="20kJfa" value="left_old" />
+      <ref role="20lvS9" node="6DXTEHeMm6Q" resolve="Expression_old" />
+      <node concept="asaX9" id="2Nt1By$UHz7" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;DLTL.structure.BinaryExpression&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="6DXTEHeMm6N" role="1TKVEi">
       <property role="IQ2ns" value="7673542963544809907" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="right" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6DXTEHeMm6Q" resolve="Expression" />
+      <property role="20kJfa" value="right_old" />
+      <ref role="20lvS9" node="6DXTEHeMm6Q" resolve="Expression_old" />
+      <node concept="asaX9" id="2Nt1By$UHzi" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;DLTL.structure.BinaryExpression&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="2Nt1By$UHwF" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMm6Q">
     <property role="EcuMT" value="7673542963544809910" />
-    <property role="TrG5h" value="Expression" />
+    <property role="TrG5h" value="Expression_old" />
     <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="logic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="2Nt1By$UHvV" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMm6R">
     <property role="EcuMT" value="7673542963544809911" />
-    <property role="TrG5h" value="BinaryComparation" />
+    <property role="TrG5h" value="BinaryComparation_old" />
     <property role="34LRSv" value="binary comparason" />
-    <ref role="1TJDcQ" node="6DXTEHeMm6K" resolve="BinaryExpression" />
+    <property role="3GE5qa" value="logic" />
+    <ref role="1TJDcQ" to="qbzd:6DXTEHeMm6K" resolve="BinaryExpression" />
     <node concept="1TJgyi" id="6DXTEHeMm7j" role="1TKVEl">
       <property role="IQ2nx" value="7673542963544809939" />
-      <property role="TrG5h" value="comparator" />
-      <ref role="AX2Wp" node="6DXTEHeMm6S" resolve="Comparator" />
+      <property role="TrG5h" value="comparator_old" />
+      <ref role="AX2Wp" to="qbzd:6DXTEHeMm6S" resolve="Comparator" />
+      <node concept="asaX9" id="2Nt1By$UHy5" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;DLTL.structure.BinaryComparation&quot;" />
+      </node>
     </node>
-  </node>
-  <node concept="25R3W" id="6DXTEHeMm6S">
-    <property role="3F6X1D" value="7673542963544809912" />
-    <property role="TrG5h" value="Comparator" />
-    <ref role="1H5jkz" node="6DXTEHeMm6T" resolve="equal" />
-    <node concept="25R33" id="6DXTEHeMm6T" role="25R1y">
-      <property role="3tVfz5" value="7673542963544809913" />
-      <property role="TrG5h" value="equal" />
-      <property role="1L1pqM" value="equal" />
-    </node>
-    <node concept="25R33" id="6DXTEHeMm6U" role="25R1y">
-      <property role="3tVfz5" value="7673542963544809914" />
-      <property role="TrG5h" value="largerThan" />
-      <property role="1L1pqM" value="larger than" />
-    </node>
-    <node concept="25R33" id="6DXTEHeMm6X" role="25R1y">
-      <property role="3tVfz5" value="7673542963544809917" />
-      <property role="TrG5h" value="smallerThan" />
-      <property role="1L1pqM" value="smaller than" />
-    </node>
-    <node concept="25R33" id="6DXTEHeMm71" role="25R1y">
-      <property role="3tVfz5" value="7673542963544809921" />
-      <property role="TrG5h" value="largetThanOrEqual" />
-      <property role="1L1pqM" value="larger than or equal" />
-    </node>
-    <node concept="25R33" id="6DXTEHeMm76" role="25R1y">
-      <property role="3tVfz5" value="7673542963544809926" />
-      <property role="TrG5h" value="smallerThanOrEqual" />
-      <property role="1L1pqM" value="smaller than or equal" />
-    </node>
-    <node concept="25R33" id="6DXTEHeMm7c" role="25R1y">
-      <property role="3tVfz5" value="7673542963544809932" />
-      <property role="TrG5h" value="notEqual" />
-      <property role="1L1pqM" value="not equal" />
+    <node concept="asaX9" id="2Nt1By$UHx2" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMm7l">
     <property role="EcuMT" value="7673542963544809941" />
-    <property role="TrG5h" value="BinaryOperation" />
+    <property role="TrG5h" value="BinaryOperation_old" />
     <property role="34LRSv" value="binary operation" />
-    <ref role="1TJDcQ" node="6DXTEHeMm6K" resolve="BinaryExpression" />
+    <property role="3GE5qa" value="logic" />
+    <ref role="1TJDcQ" to="qbzd:6DXTEHeMm6K" resolve="BinaryExpression" />
     <node concept="1TJgyi" id="6DXTEHeMm7y" role="1TKVEl">
       <property role="IQ2nx" value="7673542963544809954" />
-      <property role="TrG5h" value="operator" />
-      <ref role="AX2Wp" node="6DXTEHeMm7m" resolve="Operator" />
+      <property role="TrG5h" value="operator_old" />
+      <ref role="AX2Wp" to="qbzd:6DXTEHeMm7m" resolve="Operator" />
+      <node concept="asaX9" id="2Nt1By$UHxJ" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;DLTL.structure.BinaryOperation&quot;" />
+      </node>
     </node>
-  </node>
-  <node concept="25R3W" id="6DXTEHeMm7m">
-    <property role="3F6X1D" value="7673542963544809942" />
-    <property role="TrG5h" value="Operator" />
-    <node concept="25R33" id="6DXTEHeMm7p" role="25R1y">
-      <property role="3tVfz5" value="7673542963544809945" />
-      <property role="TrG5h" value="plus" />
-      <property role="1L1pqM" value="plus" />
-    </node>
-    <node concept="25R33" id="6DXTEHeMm7s" role="25R1y">
-      <property role="3tVfz5" value="7673542963544809948" />
-      <property role="TrG5h" value="minus" />
-      <property role="1L1pqM" value="minus" />
+    <node concept="asaX9" id="2Nt1By$UHwv" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMm7$">
     <property role="EcuMT" value="7673542963544809956" />
-    <property role="TrG5h" value="BinaryConnection" />
+    <property role="TrG5h" value="BinaryConnection_old" />
     <property role="34LRSv" value="binary connection" />
-    <ref role="1TJDcQ" node="6DXTEHeMm6K" resolve="BinaryExpression" />
+    <property role="3GE5qa" value="logic" />
+    <ref role="1TJDcQ" to="qbzd:6DXTEHeMm6K" resolve="BinaryExpression" />
     <node concept="1TJgyi" id="6DXTEHeMm7I" role="1TKVEl">
       <property role="IQ2nx" value="7673542963544809966" />
-      <property role="TrG5h" value="connector" />
-      <ref role="AX2Wp" node="6DXTEHeMm7_" resolve="Connector" />
+      <property role="TrG5h" value="connector_old" />
+      <ref role="AX2Wp" to="qbzd:6DXTEHeMm7_" resolve="Connector" />
+      <node concept="asaX9" id="2Nt1By$UHxU" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;DLTL.structure.BinaryConnection&quot;" />
+      </node>
     </node>
-  </node>
-  <node concept="25R3W" id="6DXTEHeMm7_">
-    <property role="3F6X1D" value="7673542963544809957" />
-    <property role="TrG5h" value="Connector" />
-    <node concept="25R33" id="6DXTEHeMm7B" role="25R1y">
-      <property role="3tVfz5" value="7673542963544809959" />
-      <property role="TrG5h" value="And" />
-      <property role="1L1pqM" value="and" />
-    </node>
-    <node concept="25R33" id="6DXTEHeMm7A" role="25R1y">
-      <property role="3tVfz5" value="7673542963544809958" />
-      <property role="TrG5h" value="Or" />
-      <property role="1L1pqM" value="or" />
-    </node>
-    <node concept="25R33" id="6DXTEHeMm7E" role="25R1y">
-      <property role="3tVfz5" value="7673542963544809962" />
-      <property role="TrG5h" value="Imply" />
-      <property role="1L1pqM" value="implies" />
+    <node concept="asaX9" id="2Nt1By$UHwQ" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMm7K">
     <property role="EcuMT" value="7673542963544809968" />
-    <property role="TrG5h" value="VariableReference" />
-    <ref role="1TJDcQ" node="6DXTEHeOxe0" resolve="UnaryExpression" />
+    <property role="TrG5h" value="VariableReference_old" />
+    <property role="3GE5qa" value="logic" />
+    <ref role="1TJDcQ" to="qbzd:6DXTEHeOxe0" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="6DXTEHeMmVM" role="1TKVEi">
       <property role="IQ2ns" value="7673542963544813298" />
-      <property role="20kJfa" value="ref" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6DXTEHeMmVF" resolve="Variable" />
+      <property role="20kJfa" value="ref_old" />
+      <ref role="20lvS9" node="6DXTEHeMmVF" resolve="Variable_old" />
+      <node concept="asaX9" id="2Nt1By$UHzt" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;DLTL.structure.VariableReference&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="2Nt1By$UHur" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMm7L">
     <property role="EcuMT" value="7673542963544809969" />
-    <property role="TrG5h" value="Constant" />
-    <ref role="1TJDcQ" node="6DXTEHeOxe0" resolve="UnaryExpression" />
+    <property role="TrG5h" value="Constant_old" />
+    <property role="3GE5qa" value="logic" />
+    <ref role="1TJDcQ" to="qbzd:6DXTEHeOxe0" resolve="UnaryExpression" />
+    <node concept="asaX9" id="2Nt1By$UHw7" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMmTy">
     <property role="EcuMT" value="7673542963544813154" />
-    <property role="TrG5h" value="IntegerConstant" />
+    <property role="TrG5h" value="IntegerConstant_old" />
     <property role="34LRSv" value="integer" />
-    <ref role="1TJDcQ" node="6DXTEHeMm7L" resolve="Constant" />
+    <property role="3GE5qa" value="logic" />
+    <ref role="1TJDcQ" to="qbzd:6DXTEHeMm7L" resolve="Constant" />
     <node concept="1TJgyi" id="6DXTEHeMmTz" role="1TKVEl">
       <property role="IQ2nx" value="7673542963544813155" />
-      <property role="TrG5h" value="value" />
+      <property role="TrG5h" value="value_old" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <node concept="asaX9" id="2Nt1By$UHxe" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;DLTL.structure.IntegerConstant&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="2Nt1By$UHvz" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMmT_">
     <property role="EcuMT" value="7673542963544813157" />
-    <property role="TrG5h" value="FloatConstant" />
+    <property role="TrG5h" value="FloatConstant_old" />
     <property role="34LRSv" value="float" />
-    <ref role="1TJDcQ" node="6DXTEHeMm7L" resolve="Constant" />
+    <property role="3GE5qa" value="logic" />
+    <ref role="1TJDcQ" to="qbzd:6DXTEHeMm7L" resolve="Constant" />
     <node concept="1TJgyi" id="6DXTEHeMmTA" role="1TKVEl">
       <property role="IQ2nx" value="7673542963544813158" />
-      <property role="TrG5h" value="value" />
+      <property role="TrG5h" value="value_old" />
       <ref role="AX2Wp" to="tpee:gc$lTUB" resolve="_FPNumber_String" />
+      <node concept="asaX9" id="2Nt1By$UHxp" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;DLTL.structure.FloatConstant&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="2Nt1By$UHvJ" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMmVB">
     <property role="EcuMT" value="7673542963544813287" />
-    <property role="TrG5h" value="BooleanConstant" />
+    <property role="TrG5h" value="BooleanConstant_old" />
     <property role="34LRSv" value="boolean" />
-    <ref role="1TJDcQ" node="6DXTEHeMm7L" resolve="Constant" />
+    <property role="3GE5qa" value="logic" />
+    <ref role="1TJDcQ" to="qbzd:6DXTEHeMm7L" resolve="Constant" />
     <node concept="1TJgyi" id="6DXTEHeMmVC" role="1TKVEl">
       <property role="IQ2nx" value="7673542963544813288" />
-      <property role="TrG5h" value="value" />
+      <property role="TrG5h" value="value_old" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="2Nt1By$UHx$" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;DLTL.structure.BooleanConstant&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="2Nt1By$UHwj" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMmVF">
     <property role="EcuMT" value="7673542963544813291" />
-    <property role="TrG5h" value="Variable" />
+    <property role="TrG5h" value="Variable_old" />
+    <property role="3GE5qa" value="logic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6DXTEHeMmVG" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -254,48 +254,73 @@
     <node concept="1TJgyj" id="6DXTEHeMmVJ" role="1TKVEi">
       <property role="IQ2ns" value="7673542963544813295" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="type_old" />
       <ref role="20lvS9" to="tpee:gWaQbR$" resolve="PrimitiveType" />
+      <node concept="asaX9" id="2Nt1By$UHyg" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;DLTL.structure.Variable&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="2Nt1By$UHuB" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMmVP">
     <property role="EcuMT" value="7673542963544813301" />
-    <property role="TrG5h" value="Specification" />
+    <property role="TrG5h" value="Specification_old" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="logic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6DXTEHeMmVQ" role="1TKVEi">
       <property role="IQ2ns" value="7673542963544813302" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="predicates" />
+      <property role="20kJfa" value="predicates_old" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6DXTEHeMm4Y" resolve="Predicate" />
+      <ref role="20lvS9" node="6DXTEHeMm4Y" resolve="Predicate_old" />
+      <node concept="asaX9" id="2Nt1By$UHyr" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;DLTL.structure.Specification&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="6DXTEHeMmVT" role="1TKVEi">
       <property role="IQ2ns" value="7673542963544813305" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="variables" />
+      <property role="20kJfa" value="variables_old" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6DXTEHeMmVF" resolve="Variable" />
+      <ref role="20lvS9" node="6DXTEHeMmVF" resolve="Variable_old" />
+      <node concept="asaX9" id="2Nt1By$UHyA" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;DLTL.structure.Specification&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="2Nt1By$UHuZ" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeOxe0">
     <property role="EcuMT" value="7673542963545379712" />
-    <property role="TrG5h" value="UnaryExpression" />
+    <property role="TrG5h" value="UnaryExpression_old" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="6DXTEHeMm6Q" resolve="Expression" />
+    <property role="3GE5qa" value="logic" />
+    <ref role="1TJDcQ" to="qbzd:6DXTEHeMm6Q" resolve="Expression" />
+    <node concept="asaX9" id="2Nt1By$UHuN" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4LAoA_s50vB">
     <property role="EcuMT" value="5505195799162914791" />
-    <property role="TrG5h" value="NotOperation" />
+    <property role="TrG5h" value="NotOperation_old" />
     <property role="34LRSv" value="not" />
-    <ref role="1TJDcQ" node="6DXTEHeOxe0" resolve="UnaryExpression" />
+    <property role="3GE5qa" value="logic" />
+    <ref role="1TJDcQ" to="qbzd:6DXTEHeOxe0" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="4LAoA_s50vC" role="1TKVEi">
       <property role="IQ2ns" value="5505195799162914792" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6DXTEHeMm6Q" resolve="Expression" />
+      <property role="20kJfa" value="expression_old" />
+      <ref role="20lvS9" node="6DXTEHeMm6Q" resolve="Expression_old" />
+      <node concept="asaX9" id="2Nt1By$UHyW" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;DLTL.structure.NotOperation&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="2Nt1By$UHvn" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;DLTL&quot;" />
     </node>
   </node>
 </model>

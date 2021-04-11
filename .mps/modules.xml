@@ -4,7 +4,6 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/DLTL/DLTL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/DLTL/sandbox/DLTL.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/SpecificationLogicLanguage/SpecificationLogicLanguage.mpl" folder="" />
     </projectModules>
   </component>
 </project>

@@ -3,41 +3,18 @@
   <persistence version="9" />
   <languages>
     <use id="091a9980-1f14-4985-b06a-9c8c7ccee4a2" name="DLTL" version="0" />
-    <use id="490a9af6-490e-4908-abde-38f69766a5e3" name="SpecificationLogicLanguage" version="0" />
   </languages>
   <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
     </language>
-    <language id="490a9af6-490e-4908-abde-38f69766a5e3" name="SpecificationLogicLanguage">
-      <concept id="7673542963544809904" name="SpecificationLogicLanguage.structure.BinaryExpression" flags="ng" index="$H8sr">
-        <child id="7673542963544809907" name="right" index="$H8so" />
-        <child id="7673542963544809905" name="left" index="$H8sq" />
-      </concept>
-      <concept id="7673542963544809911" name="SpecificationLogicLanguage.structure.BinaryComparation" flags="ng" index="$H8ss">
-        <property id="7673542963544809939" name="comparator" index="$H8tS" />
-      </concept>
-      <concept id="7673542963544809968" name="SpecificationLogicLanguage.structure.VariableReference" flags="ng" index="$H8tr">
-        <reference id="7673542963544813298" name="ref" index="$H8xp" />
-      </concept>
-      <concept id="7673542963544809790" name="SpecificationLogicLanguage.structure.Predicate" flags="ng" index="$H8ul">
-        <child id="7673542963544809791" name="expression" index="$H8uk" />
-      </concept>
-      <concept id="7673542963544813291" name="SpecificationLogicLanguage.structure.Variable" flags="ng" index="$H8x0">
-        <child id="7673542963544813295" name="type" index="$H8x4" />
-      </concept>
-      <concept id="7673542963544813301" name="SpecificationLogicLanguage.structure.Specification" flags="ng" index="$H8xu">
-        <child id="7673542963544813305" name="variables" index="$H8xi" />
-        <child id="7673542963544813302" name="predicates" index="$H8xt" />
-      </concept>
-      <concept id="7673542963544813157" name="SpecificationLogicLanguage.structure.FloatConstant" flags="ng" index="$H8ze">
-        <property id="7673542963544813158" name="value" index="$H8zd" />
-      </concept>
-    </language>
     <language id="091a9980-1f14-4985-b06a-9c8c7ccee4a2" name="DLTL">
+      <concept id="3232747222754069849" name="DLTL.structure.Argument" flags="ng" index="28fwGx">
+        <property id="3232747222754069854" name="value" index="28fwGA" />
+      </concept>
       <concept id="5505195799163163153" name="DLTL.structure.Metric" flags="ng" index="gsr1S">
         <property id="5505195799163192191" name="models" index="gvy4m" />
         <property id="5505195799163192193" name="datasets" index="gvy7C" />
@@ -50,8 +27,25 @@
       </concept>
       <concept id="5505195799163228418" name="DLTL.structure.MetricRef" flags="ng" index="gvFdF">
         <reference id="5505195799163228419" name="ref" index="gvFdE" />
+        <child id="5505195799163228586" name="inputs" index="gvFf3" />
         <child id="5505195799163228579" name="models" index="gvFfa" />
         <child id="5505195799163228582" name="datasets" index="gvFff" />
+      </concept>
+      <concept id="7673542963544809904" name="DLTL.structure.BinaryExpression" flags="ng" index="$H8sr">
+        <child id="7673542963544809907" name="right" index="$H8so" />
+        <child id="7673542963544809905" name="left" index="$H8sq" />
+      </concept>
+      <concept id="7673542963544809911" name="DLTL.structure.BinaryComparason" flags="ng" index="$H8ss">
+        <property id="7673542963544809939" name="comparator" index="$H8tS" />
+      </concept>
+      <concept id="7673542963544809790" name="DLTL.structure.Predicate" flags="ng" index="$H8ul">
+        <child id="7673542963544809791" name="expression" index="$H8uk" />
+      </concept>
+      <concept id="7673542963544813291" name="DLTL.structure.Variable" flags="ng" index="$H8x0">
+        <child id="7673542963544813295" name="type" index="$H8x4" />
+      </concept>
+      <concept id="7673542963544813157" name="DLTL.structure.FloatConstant" flags="ng" index="$H8ze">
+        <property id="7673542963544813158" name="value" index="$H8zd" />
       </concept>
       <concept id="7673542963543034538" name="DLTL.structure.Parameter" flags="ng" index="$OUK1">
         <property id="5505195799163101325" name="value" index="gs8b$" />
@@ -77,26 +71,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="$H8xu" id="6DXTEHeMH4y">
-    <node concept="$H8x0" id="6DXTEHeRLkB" role="$H8xi">
-      <property role="TrG5h" value="value1" />
-      <node concept="10Oyi0" id="4LAoA_s5bwk" role="$H8x4" />
-    </node>
-    <node concept="$H8x0" id="4LAoA_s5bvT" role="$H8xi">
-      <property role="TrG5h" value="value2" />
-      <node concept="10Oyi0" id="4LAoA_s5bwA" role="$H8x4" />
-    </node>
-    <node concept="$H8ul" id="6DXTEHeRLkX" role="$H8xt">
-      <node concept="$H8ss" id="6DXTEHeRLme" role="$H8uk">
-        <node concept="$H8tr" id="6DXTEHeRLmE" role="$H8sq">
-          <ref role="$H8xp" node="6DXTEHeRLkB" resolve="value1" />
-        </node>
-        <node concept="$H8ze" id="4LAoA_s5AXT" role="$H8so">
-          <property role="$H8zd" value="10.0" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="$OUNx" id="4LAoA_s5X58">
     <property role="TrG5h" value="CIFAR10" />
     <property role="$OMmc" value="torchvision.datasets" />
@@ -115,23 +89,50 @@
       <property role="TrG5h" value="model" />
       <node concept="10P55v" id="4LAoA_s64dK" role="$H8x4" />
     </node>
-    <node concept="10Oyi0" id="4LAoA_s75gN" role="gsr1Z" />
+    <node concept="$H8x0" id="4V8XOvhuqz8" role="gsr1X">
+      <property role="TrG5h" value="isTrue" />
+      <node concept="10P_77" id="4V8XOvhuqzi" role="$H8x4" />
+    </node>
+    <node concept="10OMs4" id="4V8XOvhuqQ5" role="gsr1Z" />
   </node>
   <node concept="$OUMc" id="4LAoA_s6SNu">
     <property role="TrG5h" value="test" />
-    <node concept="$H8ul" id="4LAoA_s6SNv" role="gvTJ0">
-      <node concept="$H8ss" id="4LAoA_s75gQ" role="$H8uk">
+    <node concept="$H8ul" id="2Nt1By_aJfg" role="gvTJ0">
+      <node concept="$H8ss" id="2Nt1By_b86U" role="$H8uk">
         <property role="$H8tS" value="6DXTEHeMm71/largetThanOrEqual" />
-        <node concept="gvFdF" id="4LAoA_s75h3" role="$H8sq">
+        <node concept="gvFdF" id="2Nt1By_b87d" role="$H8sq">
           <ref role="gvFdE" node="4LAoA_s64d$" resolve="Accuracy" />
-          <node concept="$OUKz" id="4LAoA_s7iiz" role="gvFfa">
+          <node concept="$OUKz" id="2Nt1By_b87$" role="gvFfa">
             <ref role="$OUKT" node="4LAoA_s75fW" resolve="CNN" />
           </node>
-          <node concept="gvFa9" id="4LAoA_s7ij1" role="gvFff">
+          <node concept="gvFa9" id="2Nt1By_b87M" role="gvFff">
             <ref role="gvFa8" node="4LAoA_s5X58" resolve="CIFAR10" />
           </node>
         </node>
-        <node concept="$H8ze" id="4LAoA_s7ijb" role="$H8so">
+        <node concept="$H8ze" id="2Nt1By_byJQ" role="$H8so">
+          <property role="$H8zd" value="0.1" />
+        </node>
+      </node>
+    </node>
+    <node concept="$H8ul" id="2Nt1By_bzPU" role="gvTJ0">
+      <node concept="$H8ss" id="2Nt1By_bzR7" role="$H8uk">
+        <property role="$H8tS" value="6DXTEHeMm6X/smallerThan" />
+        <node concept="gvFdF" id="2Nt1By_bzRs" role="$H8so">
+          <ref role="gvFdE" node="4LAoA_s64d$" resolve="Accuracy" />
+          <node concept="$OUKz" id="2Nt1By_b$1e" role="gvFfa">
+            <ref role="$OUKT" node="4LAoA_s75fW" resolve="CNN" />
+          </node>
+          <node concept="gvFa9" id="2Nt1By_b$1t" role="gvFff">
+            <ref role="gvFa8" node="4LAoA_s5X58" resolve="CIFAR10" />
+          </node>
+          <node concept="28fwGx" id="2Nt1By_b$1G" role="gvFf3">
+            <property role="28fwGA" value="10" />
+          </node>
+          <node concept="28fwGx" id="2Nt1By_b$1V" role="gvFf3">
+            <property role="28fwGA" value="12" />
+          </node>
+        </node>
+        <node concept="$H8ze" id="2Nt1By_bzQV" role="$H8sq">
           <property role="$H8zd" value="0.9" />
         </node>
       </node>
