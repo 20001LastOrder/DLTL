@@ -41,16 +41,16 @@
     <property role="gvy7C" value="1" />
     <property role="gvy7H" value="0" />
     <node concept="2vGlFM" id="2arbFMpMwI_" role="2vGlFZ">
-      <property role="2vGlFL" value="def f1score(model, test_loader, class_name):" />
+      <property role="2vGlFL" value="def f1score(model, test_set, class_name):" />
     </node>
     <node concept="2vGlFM" id="3cGtg6HFoCc" role="2vGlFZ">
       <property role="2vGlFL" value="    epsilon = 1e-7" />
     </node>
     <node concept="2vGlFM" id="2arbFMpMwIB" role="2vGlFZ">
-      <property role="2vGlFL" value="    p = Precision(model, test_loader, class_name)" />
+      <property role="2vGlFL" value="    p = Precision(model, test_set, class_name)" />
     </node>
     <node concept="2vGlFM" id="3cGtg6HFoC3" role="2vGlFZ">
-      <property role="2vGlFL" value="    r = Recall(model, test_loader, class_name)" />
+      <property role="2vGlFL" value="    r = Recall(model, test_set, class_name)" />
     </node>
     <node concept="2vGlFM" id="3cGtg6HFoC7" role="2vGlFZ">
       <property role="2vGlFL" value="    f1 = 2* (p*r) / (p + r + epsilon)" />
@@ -270,8 +270,53 @@
     <node concept="aQbNF" id="3cGtg6HFo_7" role="gsr1Z" />
   </node>
   <node concept="gsr1S" id="3cGtg6HFo_8">
-    <property role="TrG5h" value="RMSE" />
-    <node concept="aQbNF" id="3cGtg6HFo_9" role="gsr1Z" />
+    <property role="TrG5h" value="MSE" />
+    <property role="gvy4m" value="1" />
+    <property role="gvy7C" value="1" />
+    <property role="gvy7H" value="1" />
+    <node concept="2vGlFM" id="3cGtg6HFoJW" role="2vGlFZ">
+      <property role="2vGlFL" value="def MSEloss(model, test_set, class_name):" />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoOu" role="2vGlFZ">
+      <property role="2vGlFL" value="    batch_size = 50 " />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoOx" role="2vGlFZ">
+      <property role="2vGlFL" value="    test_loader = torch.utils.data.DataLoader(test_set, batch_size=batch_size, shuffle=False)" />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoM0" role="2vGlFZ">
+      <property role="2vGlFL" value="    with torch.no_grad():" />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoMb" role="2vGlFZ">
+      <property role="2vGlFL" value="    correct = 0" />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoMc" role="2vGlFZ">
+      <property role="2vGlFL" value="    for images, labels in test_loader:" />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoMd" role="2vGlFZ">
+      <property role="2vGlFL" value="        images = images.reshape(-1, input_size)" />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoMe" role="2vGlFZ">
+      <property role="2vGlFL" value="        outputs = model(images)" />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoMf" role="2vGlFZ">
+      <property role="2vGlFL" value="        _, predicted = torch.max(outputs.data, 1)" />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoJL" role="2vGlFZ">
+      <property role="2vGlFL" value="    loss = torch.nn.MSELoss()" />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoJP" role="2vGlFZ">
+      <property role="2vGlFL" value="    output = loss(predicted, class_name)" />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoJQ" role="2vGlFZ">
+      <property role="2vGlFL" value="    output.backward()" />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoNh" role="2vGlFZ">
+      <property role="2vGlFL" value="    " />
+    </node>
+    <node concept="2vGlFM" id="3cGtg6HFoO3" role="2vGlFZ">
+      <property role="2vGlFL" value="    return output" />
+    </node>
+    <node concept="10OMs4" id="3cGtg6HFoQ7" role="gsr1Z" />
   </node>
   <node concept="gsr1S" id="3cGtg6HFo_a">
     <property role="TrG5h" value="ConfusionMatrix" />
