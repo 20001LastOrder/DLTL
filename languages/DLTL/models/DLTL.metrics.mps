@@ -43,7 +43,7 @@
       <property role="2vGlFL" value="def f1score(net, dataset, label):" />
     </node>
     <node concept="2vGlFM" id="2arbFMpMwIB" role="2vGlFZ">
-      <property role="2vGlFL" value="    pass" />
+      <property role="2vGlFL" value="    return 0" />
     </node>
     <node concept="$H8x0" id="2arbFMpLX0_" role="gsr1X">
       <property role="TrG5h" value="label" />
