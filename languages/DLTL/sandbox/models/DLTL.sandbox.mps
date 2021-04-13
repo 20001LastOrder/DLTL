@@ -21,6 +21,7 @@
         <property id="5505195799163192196" name="datasamples" index="gvy7H" />
         <child id="5505195799163163156" name="input" index="gsr1X" />
         <child id="5505195799163163158" name="output" index="gsr1Z" />
+        <child id="5677059218129661368" name="implementation" index="2vGlFZ" />
       </concept>
       <concept id="5505195799163228384" name="DLTL.structure.DatasetRef" flags="ng" index="gvFa9">
         <reference id="5505195799163228385" name="ref" index="gvFa8" />
@@ -31,6 +32,7 @@
         <child id="5505195799163228579" name="models" index="gvFfa" />
         <child id="5505195799163228582" name="datasets" index="gvFff" />
       </concept>
+      <concept id="5677059218129661365" name="DLTL.structure.TextLine" flags="ng" index="2vGlFM" />
       <concept id="7673542963544809904" name="DLTL.structure.BinaryExpression" flags="ng" index="$H8sr">
         <child id="7673542963544809907" name="right" index="$H8so" />
         <child id="7673542963544809905" name="left" index="$H8sq" />
@@ -85,6 +87,7 @@
     <property role="gvy4m" value="1" />
     <property role="gvy7C" value="1" />
     <property role="gvy7H" value="0" />
+    <node concept="2vGlFM" id="2arbFMpKPb5" role="2vGlFZ" />
     <node concept="$H8x0" id="4LAoA_s64dA" role="gsr1X">
       <property role="TrG5h" value="model" />
       <node concept="10P55v" id="4LAoA_s64dK" role="$H8x4" />
@@ -137,10 +140,78 @@
         </node>
       </node>
     </node>
+    <node concept="$H8ul" id="2arbFMpKPdn" role="gvTJ0">
+      <node concept="$H8ss" id="2arbFMpKPfC" role="$H8uk">
+        <property role="$H8tS" value="6DXTEHeMm6U/largerThan" />
+        <node concept="$H8ze" id="2arbFMpKPg6" role="$H8so">
+          <property role="$H8zd" value="0.9" />
+        </node>
+        <node concept="gvFdF" id="2arbFMpKPfd" role="$H8sq">
+          <ref role="gvFdE" node="4LAoA_s64d$" resolve="Accuracy" />
+          <node concept="$OUKz" id="2arbFMpKPfq" role="gvFfa">
+            <ref role="$OUKT" node="4LAoA_s75fW" resolve="CNN" />
+          </node>
+          <node concept="gvFa9" id="2arbFMpKPfx" role="gvFff">
+            <ref role="gvFa8" node="4LAoA_s5X58" resolve="CIFAR10" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="$H8ul" id="2arbFMpKVXm" role="gvTJ0">
+      <node concept="$H8ss" id="2arbFMpKVYm" role="$H8uk">
+        <property role="$H8tS" value="6DXTEHeMm6U/largerThan" />
+        <node concept="gvFdF" id="2arbFMpKVXV" role="$H8sq">
+          <ref role="gvFdE" node="4LAoA_s64d$" resolve="Accuracy" />
+          <node concept="$OUKz" id="2arbFMpKVY8" role="gvFfa">
+            <ref role="$OUKT" node="2arbFMpKVXl" resolve="Resnet" />
+          </node>
+          <node concept="gvFa9" id="2arbFMpKVYf" role="gvFff">
+            <ref role="gvFa8" node="4LAoA_s5X58" resolve="CIFAR10" />
+          </node>
+        </node>
+        <node concept="gvFdF" id="2arbFMpKVZf" role="$H8so">
+          <ref role="gvFdE" node="4LAoA_s64d$" resolve="Accuracy" />
+          <node concept="gvFa9" id="2arbFMpKVZh" role="gvFff">
+            <ref role="gvFa8" node="4LAoA_s5X58" resolve="CIFAR10" />
+          </node>
+          <node concept="$OUKz" id="2arbFMpKVZH" role="gvFfa">
+            <ref role="$OUKT" node="4LAoA_s75fW" resolve="CNN" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="$H8ul" id="2arbFMpKWbk" role="gvTJ0">
+      <node concept="gvFdF" id="2arbFMpKWc1" role="$H8uk">
+        <ref role="gvFdE" node="2arbFMpKVZV" resolve="Model1Better" />
+        <node concept="$OUKz" id="2arbFMpLWDy" role="gvFfa">
+          <ref role="$OUKT" node="4LAoA_s75fW" resolve="CNN" />
+        </node>
+        <node concept="$OUKz" id="2arbFMpLWEc" role="gvFfa">
+          <ref role="$OUKT" node="2arbFMpKVXl" resolve="Resnet" />
+        </node>
+        <node concept="gvFa9" id="2arbFMpLWEl" role="gvFff">
+          <ref role="gvFa8" node="4LAoA_s5X58" resolve="CIFAR10" />
+        </node>
+      </node>
+    </node>
+    <node concept="$H8ul" id="2arbFMpMwGq" role="gvTJ0">
+      <node concept="gvFdF" id="2arbFMpMwH4" role="$H8uk" />
+    </node>
   </node>
   <node concept="$PiRp" id="4LAoA_s75fW">
     <property role="TrG5h" value="CNN" />
     <property role="$OUKN" value="torchvision.models" />
+  </node>
+  <node concept="$PiRp" id="2arbFMpKVXl">
+    <property role="TrG5h" value="Resnet" />
+    <property role="$OUKN" value="torch.models" />
+  </node>
+  <node concept="gsr1S" id="2arbFMpKVZV">
+    <property role="TrG5h" value="Model1Better" />
+    <property role="gvy4m" value="2" />
+    <property role="gvy7C" value="1" />
+    <property role="gvy7H" value="0" />
+    <node concept="10P_77" id="2arbFMpKWau" role="gsr1Z" />
   </node>
 </model>
 
