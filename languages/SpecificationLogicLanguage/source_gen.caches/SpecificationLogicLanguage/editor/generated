@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-5zocf4d4a5yy4jj8m1b3xfl0yzp5es9">
-  <files names="BinaryComparation_Editor.java:BinaryComparation_EditorBuilder_a.java:BinaryConnection_Editor.java:BinaryConnection_EditorBuilder_a.java:BinaryExpression_SubstituteMenu.java:BinaryOperation_Editor.java:BinaryOperation_EditorBuilder_a.java:BooleanConstant_Editor.java:BooleanConstant_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:FloatConstant_Editor.java:FloatConstant_EditorBuilder_a.java:IntegerConstant_Editor.java:IntegerConstant_EditorBuilder_a.java:NotOperation_Editor.java:NotOperation_EditorBuilder_a.java:Predicate_Editor.java:Predicate_EditorBuilder_a.java:SingleValue.java:VariableReference_Editor.java:VariableReference_EditorBuilder_a.java:VariableReference_SubstituteMenu.java:Variable_Editor.java:Variable_EditorBuilder_a.java" />
-</product>
-
