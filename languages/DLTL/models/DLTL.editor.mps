@@ -95,10 +95,6 @@
         <property id="1136923970224" name="keycode" index="2PWKIS" />
       </concept>
       <concept id="1136917288805" name="jetbrains.mps.lang.editor.structure.CellKeyMap_ExecuteFunction" flags="in" index="2PzhpH" />
-      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
-      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
-        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
-      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -365,18 +361,6 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
   </registry>
-  <node concept="24kQdi" id="6DXTEHeDrrW">
-    <ref role="1XX52x" to="qbzd:6DXTEHeDrqd" resolve="WorkBench" />
-    <node concept="3EZMnI" id="6DXTEHeDrrY" role="2wV5jI">
-      <node concept="3F0ifn" id="6DXTEHeDrt4" role="3EZMnx">
-        <property role="3F0ifm" value="WorkBench" />
-      </node>
-      <node concept="3F0A7n" id="6DXTEHeDrte" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="l2Vlx" id="6DXTEHeDrs1" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="6DXTEHeEh7i">
     <ref role="1XX52x" to="qbzd:6DXTEHeEcHM" resolve="Model" />
     <node concept="3EZMnI" id="4LAoA_s6d3G" role="2wV5jI">
@@ -406,24 +390,6 @@
       <node concept="l2Vlx" id="4LAoA_s6d3Q" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="6DXTEHeECof">
-    <ref role="1XX52x" to="qbzd:6DXTEHeEvfZ" resolve="DataSetTestCase" />
-    <node concept="3EZMnI" id="6DXTEHeECoq" role="2wV5jI">
-      <node concept="3F0ifn" id="6DXTEHeECox" role="3EZMnx">
-        <property role="3F0ifm" value="DataSetTest" />
-      </node>
-      <node concept="PMmxH" id="6DXTEHeFYWl" role="3EZMnx">
-        <ref role="PMmxG" node="6DXTEHeFQhF" resolve="TestCaseParameters" />
-      </node>
-      <node concept="3F0A7n" id="6DXTEHeFYWs" role="3EZMnx">
-        <ref role="1NtTu8" to="qbzd:6DXTEHeF$DF" resolve="metrciAccumulator" />
-        <node concept="pVoyu" id="6DXTEHeFYWz" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="6DXTEHeECot" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="6DXTEHeF$Fo">
     <ref role="1XX52x" to="qbzd:6DXTEHeF$CB" resolve="TestWorkbench" />
     <node concept="3EZMnI" id="6DXTEHeF$Fz" role="2wV5jI">
@@ -432,6 +398,20 @@
       </node>
       <node concept="3F0A7n" id="6DXTEHeF$FO" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="GAenPgFvT4" role="3EZMnx">
+        <property role="3F0ifm" value="Imports:" />
+        <node concept="pVoyu" id="GAenPgFvTg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="GAenPgFvTv" role="3EZMnx">
+        <ref role="1NtTu8" to="qbzd:GAenPgFvSQ" resolve="imports" />
+        <node concept="2iRkQZ" id="GAenPgFvTy" role="2czzBx" />
+        <node concept="VPM3Z" id="GAenPgFvTz" role="3F10Kt" />
+        <node concept="pVoyu" id="GAenPgFvTM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="6DXTEHeF$FA" role="2iSdaV" />
       <node concept="3F0ifn" id="6DXTEHeFZ1A" role="3EZMnx">
@@ -498,55 +478,6 @@
         <ref role="1NtTu8" to="qbzd:4LAoA_s5I2d" resolve="value" />
       </node>
       <node concept="l2Vlx" id="4LAoA_s5I49" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="PKFIW" id="6DXTEHeFQhF">
-    <property role="TrG5h" value="TestCaseParameters" />
-    <ref role="1XX52x" to="qbzd:6DXTEHeEtqV" resolve="TestCase" />
-    <node concept="3EZMnI" id="6DXTEHeFQi5" role="2wV5jI">
-      <node concept="3F0A7n" id="6DXTEHeFYVj" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3F0ifn" id="6DXTEHeFQic" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-      </node>
-      <node concept="3F0ifn" id="6DXTEHeFYWO" role="3EZMnx">
-        <property role="3F0ifm" value="Models:" />
-      </node>
-      <node concept="3F2HdR" id="6DXTEHeFQir" role="3EZMnx">
-        <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="qbzd:6DXTEHeF$EW" resolve="modelParameters" />
-        <node concept="2iRfu4" id="6DXTEHeFQiu" role="2czzBx" />
-        <node concept="VPM3Z" id="6DXTEHeFQiv" role="3F10Kt" />
-      </node>
-      <node concept="3F0ifn" id="6DXTEHeFYX6" role="3EZMnx">
-        <property role="3F0ifm" value="DataSet:" />
-      </node>
-      <node concept="3F1sOY" id="6DXTEHeFYY5" role="3EZMnx">
-        <ref role="1NtTu8" to="qbzd:6DXTEHeFYW_" resolve="dataSetParameter" />
-      </node>
-      <node concept="3F0ifn" id="6DXTEHeFQim" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-      </node>
-      <node concept="l2Vlx" id="6DXTEHeFQi8" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="6DXTEHeFYVP">
-    <ref role="1XX52x" to="qbzd:6DXTEHeF$DH" resolve="SingleDataTestCase" />
-    <node concept="3EZMnI" id="6DXTEHeFYVR" role="2wV5jI">
-      <node concept="3F0ifn" id="6DXTEHeFYVY" role="3EZMnx">
-        <property role="3F0ifm" value="SingleDataTest:" />
-      </node>
-      <node concept="PMmxH" id="6DXTEHeFYW4" role="3EZMnx">
-        <ref role="PMmxG" node="6DXTEHeFQhF" resolve="TestCaseParameters" />
-      </node>
-      <node concept="l2Vlx" id="6DXTEHeFYVU" role="2iSdaV" />
-      <node concept="3F0A7n" id="6DXTEHeFYWb" role="3EZMnx">
-        <ref role="1NtTu8" to="qbzd:6DXTEHeF$DF" resolve="metrciAccumulator" />
-        <node concept="pVoyu" id="6DXTEHeFYWg" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="4LAoA_s5X9f">

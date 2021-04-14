@@ -32,7 +32,9 @@
         <child id="5505195799163228579" name="models" index="gvFfa" />
         <child id="5505195799163228582" name="datasets" index="gvFff" />
       </concept>
-      <concept id="5677059218129661365" name="DLTL.structure.TextLine" flags="ng" index="2vGlFM" />
+      <concept id="5677059218129661365" name="DLTL.structure.TextLine" flags="ng" index="2vGlFM">
+        <property id="5677059218129661366" name="content" index="2vGlFL" />
+      </concept>
       <concept id="7673542963544809904" name="DLTL.structure.BinaryExpression" flags="ng" index="$H8sr">
         <child id="7673542963544809907" name="right" index="$H8so" />
         <child id="7673542963544809905" name="left" index="$H8sq" />
@@ -58,6 +60,7 @@
       </concept>
       <concept id="7673542963543034407" name="DLTL.structure.TestWorkbench" flags="ng" index="$OUMc">
         <child id="5505195799163304361" name="tests" index="gvTJ0" />
+        <child id="803392793919487542" name="imports" index="1ryWtb" />
       </concept>
       <concept id="7673542963543034442" name="DLTL.structure.Dataset" flags="ng" index="$OUNx">
         <property id="7673542963543065383" name="import" index="$OMmc" />
@@ -100,6 +103,12 @@
   </node>
   <node concept="$OUMc" id="4LAoA_s6SNu">
     <property role="TrG5h" value="test" />
+    <node concept="2vGlFM" id="GAenPgFVfZ" role="1ryWtb">
+      <property role="2vGlFL" value="import torch" />
+    </node>
+    <node concept="2vGlFM" id="GAenPgFVg1" role="1ryWtb">
+      <property role="2vGlFL" value="import torchvision" />
+    </node>
     <node concept="$H8ul" id="2Nt1By_aJfg" role="gvTJ0">
       <node concept="$H8ss" id="2Nt1By_b86U" role="$H8uk">
         <property role="$H8tS" value="6DXTEHeMm71/largetThanOrEqual" />
@@ -193,9 +202,6 @@
           <ref role="gvFa8" node="4LAoA_s5X58" resolve="CIFAR10" />
         </node>
       </node>
-    </node>
-    <node concept="$H8ul" id="2arbFMpMwGq" role="gvTJ0">
-      <node concept="gvFdF" id="2arbFMpMwH4" role="$H8uk" />
     </node>
   </node>
   <node concept="$PiRp" id="4LAoA_s75fW">
