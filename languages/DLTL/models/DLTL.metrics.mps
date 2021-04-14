@@ -12,6 +12,7 @@
       <concept id="1164118113764" name="jetbrains.mps.baseLanguage.structure.PrimitiveType" flags="in" index="aQbNF" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
     </language>
     <language id="091a9980-1f14-4985-b06a-9c8c7ccee4a2" name="DLTL">
       <concept id="5505195799163163153" name="DLTL.structure.Metric" flags="ng" index="gsr1S">
@@ -64,84 +65,6 @@
       <node concept="10Oyi0" id="2arbFMpLX0H" role="$H8x4" />
     </node>
     <node concept="10OMs4" id="2arbFMpLX0y" role="gsr1Z" />
-  </node>
-  <node concept="gsr1S" id="3cGtg6HFo$P">
-    <property role="TrG5h" value="Accuracy" />
-    <property role="gvy4m" value="1" />
-    <property role="gvy7C" value="1" />
-    <property role="gvy7H" value="1" />
-    <node concept="2vGlFM" id="3cGtg6HFo$r" role="2vGlFZ">
-      <property role="2vGlFL" value="def accuracy(model, testset):" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFoEv" role="2vGlFZ">
-      <property role="2vGlFL" value="  batch_size = 50 " />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFoDd" role="2vGlFZ">
-      <property role="2vGlFL" value="  test_loader = torch.utils.data.DataLoader(test_set, batch_size=batch_size, shuffle=False)" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFo_c" role="2vGlFZ">
-      <property role="2vGlFL" value="  with torch.no_grad():" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFo_d" role="2vGlFZ">
-      <property role="2vGlFL" value="    correct = 0" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFo_e" role="2vGlFZ">
-      <property role="2vGlFL" value="    total = 0" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFo_f" role="2vGlFZ">
-      <property role="2vGlFL" value="    for images, labels in test_loader:" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFo_g" role="2vGlFZ">
-      <property role="2vGlFL" value="        images = images.reshape(-1, input_size)" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFo_h" role="2vGlFZ">
-      <property role="2vGlFL" value="        outputs = model(images)" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFo_i" role="2vGlFZ">
-      <property role="2vGlFL" value="        _, predicted = torch.max(outputs.data, 1)" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFo_j" role="2vGlFZ">
-      <property role="2vGlFL" value="        total += labels.size(0)" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFo_k" role="2vGlFZ">
-      <property role="2vGlFL" value="        correct += (predicted == labels).sum()" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFo_l" role="2vGlFZ">
-      <property role="2vGlFL" value="" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFo_m" role="2vGlFZ">
-      <property role="2vGlFL" value="        acc = 100 * (correct / total)" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFo_n" role="2vGlFZ">
-      <property role="2vGlFL" value="  return acc" />
-    </node>
-    <node concept="2vGlFM" id="3cGtg6HFoA2" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFoA1" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFoA0" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_Z" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_Y" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_X" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_W" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_V" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_U" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_T" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_S" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_R" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_Q" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_P" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_O" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_N" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_M" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_L" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_K" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_J" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_I" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_H" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_G" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_F" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_E" role="2vGlFZ" />
-    <node concept="2vGlFM" id="3cGtg6HFo_D" role="2vGlFZ" />
-    <node concept="10OMs4" id="3cGtg6HFo$R" role="gsr1Z" />
   </node>
   <node concept="gsr1S" id="3cGtg6HFo$U">
     <property role="TrG5h" value="Recall" />
@@ -321,6 +244,67 @@
   <node concept="gsr1S" id="3cGtg6HFo_a">
     <property role="TrG5h" value="ConfusionMatrix" />
     <node concept="aQbNF" id="3cGtg6HFo_b" role="gsr1Z" />
+  </node>
+  <node concept="gsr1S" id="GAenPgYYdD">
+    <property role="TrG5h" value="Accuracy" />
+    <property role="gvy4m" value="1" />
+    <property role="gvy7C" value="1" />
+    <node concept="2vGlFM" id="GAenPgYYdV" role="2vGlFZ">
+      <property role="2vGlFL" value="def accuracy(model, testset, device):           " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYdY" role="2vGlFZ">
+      <property role="2vGlFL" value="    model.eval()" />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYe1" role="2vGlFZ">
+      <property role="2vGlFL" value="    model.to(device)                                                   " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYe4" role="2vGlFZ">
+      <property role="2vGlFL" value="    batch_size = 50                                                                          " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYe7" role="2vGlFZ">
+      <property role="2vGlFL" value="    test_loader = torch.utils.data.DataLoader(testset, batch_size=batch_size, shuffle=False)" />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYea" role="2vGlFZ">
+      <property role="2vGlFL" value="    with torch.no_grad():                                                                    " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYed" role="2vGlFZ">
+      <property role="2vGlFL" value="        correct = 0                                                                            " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYeg" role="2vGlFZ">
+      <property role="2vGlFL" value="        total = 0                                                                              " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYej" role="2vGlFZ">
+      <property role="2vGlFL" value="        for images, labels in test_loader:  " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYem" role="2vGlFZ">
+      <property role="2vGlFL" value="            images = images.to(device)           " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYep" role="2vGlFZ">
+      <property role="2vGlFL" value="            labels = labels.to(device)                                        " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYes" role="2vGlFZ">
+      <property role="2vGlFL" value="            outputs = model(images)                                                            " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYev" role="2vGlFZ">
+      <property role="2vGlFL" value="            _, predicted = torch.max(outputs.data, dim=1)                                          " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYey" role="2vGlFZ">
+      <property role="2vGlFL" value="            total += labels.size(0)                                                            " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYe_" role="2vGlFZ">
+      <property role="2vGlFL" value="            correct += (predicted == labels).sum()                                             " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYeC" role="2vGlFZ">
+      <property role="2vGlFL" value="    acc = (correct / total)                                                      " />
+    </node>
+    <node concept="2vGlFM" id="GAenPgYYeF" role="2vGlFZ">
+      <property role="2vGlFL" value="    return acc.item()" />
+    </node>
+    <node concept="10OMs4" id="GAenPgYYdS" role="gsr1Z" />
+    <node concept="$H8x0" id="GAenPgYYdF" role="gsr1X">
+      <property role="TrG5h" value="device" />
+      <node concept="17QB3L" id="GAenPgYYdN" role="$H8x4" />
+    </node>
   </node>
 </model>
 

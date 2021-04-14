@@ -10,18 +10,38 @@
   </languages>
   <imports>
     <import index="qbzd" ref="r:892f7aaa-1f94-4be5-a872-740f44068c69(DLTL.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -33,8 +53,15 @@
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
+      <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
+        <child id="1175517851849" name="errorString" index="2MkJ7o" />
+      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
+      </concept>
+      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -57,8 +84,14 @@
       <concept id="1174663314467" name="jetbrains.mps.lang.typesystem.structure.CreateComparableEquationStatement" flags="nn" index="1ZoVOM" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -67,6 +100,16 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
     </language>
   </registry>
@@ -474,6 +517,61 @@
     <node concept="1YaCAy" id="2Nt1By_b89b" role="1YuTPh">
       <property role="TrG5h" value="metricRef" />
       <ref role="1YaFvo" to="qbzd:4LAoA_s6d42" resolve="MetricRef" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="GAenPgVfF3">
+    <property role="TrG5h" value="check_TestWorkbench" />
+    <node concept="3clFbS" id="GAenPgVfF4" role="18ibNy">
+      <node concept="2Gpval" id="GAenPgVg8R" role="3cqZAp">
+        <node concept="2GrKxI" id="GAenPgVg8S" role="2Gsz3X">
+          <property role="TrG5h" value="line" />
+        </node>
+        <node concept="2OqwBi" id="GAenPgVgj2" role="2GsD0m">
+          <node concept="1YBJjd" id="GAenPgVg9b" role="2Oq$k0">
+            <ref role="1YBMHb" node="GAenPgVfF6" resolve="testWorkbench" />
+          </node>
+          <node concept="3Tsc0h" id="GAenPgVgrU" role="2OqNvi">
+            <ref role="3TtcxE" to="qbzd:GAenPgFvSQ" resolve="imports" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="GAenPgVg8U" role="2LFqv$">
+          <node concept="3clFbJ" id="GAenPgWgBi" role="3cqZAp">
+            <node concept="3clFbS" id="GAenPgWgBk" role="3clFbx">
+              <node concept="2MkqsV" id="GAenPgWgIW" role="3cqZAp">
+                <node concept="Xl_RD" id="GAenPgWgJj" role="2MkJ7o">
+                  <property role="Xl_RC" value="Not an import expression" />
+                </node>
+                <node concept="2GrUjf" id="GAenPgWgJ8" role="1urrMF">
+                  <ref role="2Gs0qQ" node="GAenPgVg8S" resolve="line" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="GAenPgWgCM" role="3clFbw">
+              <node concept="2OqwBi" id="GAenPgWgCO" role="3fr31v">
+                <node concept="2OqwBi" id="GAenPgWgCP" role="2Oq$k0">
+                  <node concept="2GrUjf" id="GAenPgWgCQ" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="GAenPgVg8S" resolve="line" />
+                  </node>
+                  <node concept="3TrcHB" id="GAenPgWgCR" role="2OqNvi">
+                    <ref role="3TsBF5" to="qbzd:4V8XOvhuqQQ" resolve="content" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="GAenPgWgCS" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                  <node concept="Xl_RD" id="GAenPgWgCT" role="37wK5m">
+                    <property role="Xl_RC" value="^(import|from) ([A-Za-z1-9-_]+\\.)*[A-Za-z1-9-_]+( (import|as) [A-Za-z1-9-_]+)?" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="GAenPgWdnj" role="3cqZAp" />
+    </node>
+    <node concept="1YaCAy" id="GAenPgVfF6" role="1YuTPh">
+      <property role="TrG5h" value="testWorkbench" />
+      <ref role="1YaFvo" to="qbzd:6DXTEHeF$CB" resolve="TestWorkbench" />
     </node>
   </node>
 </model>
