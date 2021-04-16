@@ -56,7 +56,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return (String) TestWorkbench__BehaviorDescriptor.getParametersForExpression_idGAenPgYTt3.invoke(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.TestWorkbench$b6), SLinkOperations.getTarget(_context.getNode(), LINKS.expression$yAf5));
   }
   public static Object propertyMacro_GetValue_1_4(final PropertyMacroContext _context) {
-    return (String) Expression__BehaviorDescriptor.transform_idGAenPgHvX3.invoke(SLinkOperations.getTarget(_context.getNode(), LINKS.expression$yAf5));
+    return Expression__BehaviorDescriptor.transform_idGAenPgHvX3.invoke(SLinkOperations.getTarget(_context.getNode(), LINKS.expression$yAf5)) + "\n\n";
   }
   public static Object propertyMacro_GetValue_1_5(final PropertyMacroContext _context) {
     return "test_" + SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
@@ -116,13 +116,11 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(_context.getNode(), PROPS.method$GH0Z);
   }
   public static Object propertyMacro_GetValue_2_18(final PropertyMacroContext _context) {
-    return (String) Dataset__BehaviorDescriptor.getParameters_idGAenPgSuV9.invoke(_context.getNode());
-  }
-  public static Object propertyMacro_GetValue_2_19(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
+    String parameter = Dataset__BehaviorDescriptor.getParameters_idGAenPgSuV9.invoke(_context.getNode());
+    return (SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "_dataset_dir") + ((parameter.length() == 0 ? "" : ", " + parameter));
   }
   public static Object propertyMacro_GetValue_3_0(final PropertyMacroContext _context) {
-    return (String) Metric__BehaviorDescriptor.getImplementation_idGAenPgWX33.invoke(_context.getNode());
+    return Metric__BehaviorDescriptor.getImplementation_idGAenPgWX33.invoke(_context.getNode()) + "\n\n";
   }
   public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.imports$$fl_);
@@ -247,7 +245,6 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("803392793922836545", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "model"));
     pvqMethods.put("803392793922836558", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "vgg11_bn"));
     pvqMethods.put("803392793922836567", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "param"));
-    pvqMethods.put("803392793922836579", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "model"));
     pvqMethods.put("803392793924057907", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "method"));
   }
   @NotNull
@@ -316,8 +313,6 @@ public class QueriesGenerated extends QueryProviderBase {
         case 24:
           return QueriesGenerated.propertyMacro_GetValue_2_18(ctx);
         case 25:
-          return QueriesGenerated.propertyMacro_GetValue_2_19(ctx);
-        case 26:
           return QueriesGenerated.propertyMacro_GetValue_3_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));

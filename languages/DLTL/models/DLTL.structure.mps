@@ -247,7 +247,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="inputs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2Nt1By$SKPp" resolve="Argument" />
+      <ref role="20lvS9" node="6DXTEHeF$EE" resolve="Parameter" />
     </node>
     <node concept="1TJgyj" id="4LAoA_s6d43" role="1TKVEi">
       <property role="IQ2ns" value="5505195799163228419" />
@@ -300,27 +300,6 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="logic" />
     <ref role="1TJDcQ" node="6DXTEHeMm6Q" resolve="Expression" />
-  </node>
-  <node concept="1TIwiD" id="6DXTEHeMmVP">
-    <property role="EcuMT" value="7673542963544813301" />
-    <property role="TrG5h" value="Specification" />
-    <property role="19KtqR" value="true" />
-    <property role="3GE5qa" value="logic" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6DXTEHeMmVQ" role="1TKVEi">
-      <property role="IQ2ns" value="7673542963544813302" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="predicates" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6DXTEHeMm4Y" resolve="Predicate" />
-    </node>
-    <node concept="1TJgyj" id="6DXTEHeMmVT" role="1TKVEi">
-      <property role="IQ2ns" value="7673542963544813305" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="variables" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6DXTEHeMmVF" resolve="Variable" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6DXTEHeMm4Y">
     <property role="EcuMT" value="7673542963544809790" />

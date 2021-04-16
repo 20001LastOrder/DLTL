@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="DLTL.sandbox" uuid="ec50fa8b-43d4-412e-b1cd-ef93a00fe87c" moduleVersion="0" compileInMPS="true">
+<solution name="DLTL.sandbox" uuid="ec50fa8b-43d4-412e-b1cd-ef93a00fe87c" moduleVersion="0" compileInMPS="true" generatorOutputPath="C:/Users/chenp/MPSProjects/DLTL/examples/demo">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-4wpr1rhlsv6p3owqwi4gv4ne8sja5nz">
-  <files names="TypesystemDescriptor.java:check_TestWorkbench_NonTypesystemRule.java:typeof_BinaryComparation_InferenceRule.java:typeof_BinaryConnection_InferenceRule.java:typeof_BinaryExpression_InferenceRule.java:typeof_BinaryOperation_InferenceRule.java:typeof_BooleanConstant_InferenceRule.java:typeof_FloatConstant_InferenceRule.java:typeof_IntegerConstant_InferenceRule.java:typeof_MetricRef_InferenceRule.java:typeof_NotOperation_InferenceRule.java:typeof_Predicate_InferenceRule.java:typeof_VariableReference_InferenceRule.java:typeof_Variable_InferenceRule.java" />
-</product>
-
