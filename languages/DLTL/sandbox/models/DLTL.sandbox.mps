@@ -159,24 +159,24 @@
         </node>
       </node>
     </node>
-    <node concept="$H8ul" id="GAenPhjNzD" role="gvTJ0">
+    <node concept="$H8ul" id="GAenPhkGtt" role="gvTJ0">
       <property role="1rNUvx" value="accuracy test impossible" />
-      <node concept="$H8ss" id="GAenPhjN_B" role="$H8uk">
-        <property role="$H8tS" value="6DXTEHeMm71/largetThanOrEqual" />
-        <node concept="$H8ze" id="GAenPhjNTm" role="$H8so">
-          <property role="$H8zd" value="1." />
+      <node concept="$H8ss" id="GAenPhkGvW" role="$H8uk">
+        <property role="$H8tS" value="6DXTEHeMm6U/largerThan" />
+        <node concept="$H8ze" id="GAenPhkGwA" role="$H8so">
+          <property role="$H8zd" value="1.0" />
         </node>
-        <node concept="gvFdF" id="GAenPhjN$V" role="$H8sq">
+        <node concept="gvFdF" id="GAenPhkGvi" role="$H8sq">
           <ref role="gvFdE" to="w9ot:GAenPgYYdD" resolve="Accuracy" />
-          <node concept="$OUK1" id="GAenPhjN_8" role="gvFf3">
+          <node concept="$OUK1" id="GAenPhkGvv" role="gvFf3">
             <property role="TrG5h" value="device" />
             <property role="gs8b$" value="cuda:0" />
-            <node concept="17QB3L" id="GAenPhjN_9" role="gs8by" />
+            <node concept="17QB3L" id="GAenPhkGvw" role="gs8by" />
           </node>
-          <node concept="$OUKz" id="GAenPhjN_j" role="gvFfa">
-            <ref role="$OUKT" node="2arbFMpKVXl" resolve="Resnet18" />
+          <node concept="$OUKz" id="GAenPhkGvI" role="gvFfa">
+            <ref role="$OUKT" node="4LAoA_s75fW" resolve="VGG11" />
           </node>
-          <node concept="gvFa9" id="GAenPhjN_w" role="gvFff">
+          <node concept="gvFa9" id="GAenPhkGvP" role="gvFff">
             <ref role="gvFa8" node="4LAoA_s5X58" resolve="CIFAR10" />
           </node>
         </node>
@@ -333,59 +333,38 @@
     <property role="TrG5h" value="Time_Second" />
     <property role="gvy4m" value="1" />
     <property role="gvy7C" value="1" />
-    <node concept="2vGlFM" id="GAenPhfDdN" role="2vGlFZ">
-      <property role="2vGlFL" value="def time_second(model, test_set, device):     " />
-    </node>
-    <node concept="2vGlFM" id="GAenPhfDdP" role="2vGlFZ">
-      <property role="2vGlFL" value="    model.eval()" />
-    </node>
-    <node concept="2vGlFM" id="GAenPhfDdQ" role="2vGlFZ">
-      <property role="2vGlFL" value="    model.to(device)                                            " />
-    </node>
-    <node concept="2vGlFM" id="GAenPhfDdR" role="2vGlFZ">
-      <property role="2vGlFL" value="    batch_size = 32                                                                        " />
-    </node>
-    <node concept="2vGlFM" id="GAenPhfDdS" role="2vGlFZ">
-      <property role="2vGlFL" value="    test_loader = torch.utils.data.DataLoader(test_set, batch_size=batch_size, shuffle=False)" />
-    </node>
-    <node concept="2vGlFM" id="GAenPhfDdT" role="2vGlFZ">
-      <property role="2vGlFL" value="    start = torch.cuda.Event(enable_timing=True)" />
-    </node>
-    <node concept="2vGlFM" id="GAenPhfDdU" role="2vGlFZ">
-      <property role="2vGlFL" value="    end = torch.cuda.Event(enable_timing=True)" />
-    </node>
-    <node concept="2vGlFM" id="GAenPhfDdV" role="2vGlFZ">
+    <node concept="2vGlFM" id="GAenPhkGJK" role="2vGlFZ">
       <property role="2vGlFL" value="" />
     </node>
-    <node concept="2vGlFM" id="GAenPhfDdW" role="2vGlFZ">
-      <property role="2vGlFL" value="    start.record()" />
+    <node concept="2vGlFM" id="GAenPhkGJM" role="2vGlFZ">
+      <property role="2vGlFL" value="def test_demo_test():" />
     </node>
-    <node concept="2vGlFM" id="GAenPhfDdX" role="2vGlFZ">
-      <property role="2vGlFL" value="    with torch.no_grad():                                                                                                                                             " />
+    <node concept="2vGlFM" id="GAenPhkGJN" role="2vGlFZ">
+      <property role="2vGlFL" value="    assert ((not ((1 + 2) == 3)) or ((5 - 1) == 4))" />
     </node>
-    <node concept="2vGlFM" id="GAenPhfDdY" role="2vGlFZ">
-      <property role="2vGlFL" value="        for images, labels in test_loader:                                                     " />
+    <node concept="2vGlFM" id="GAenPhkGJO" role="2vGlFZ">
+      <property role="2vGlFL" value="" />
     </node>
-    <node concept="2vGlFM" id="GAenPhfDdZ" role="2vGlFZ">
-      <property role="2vGlFL" value="            images = images.to(device)           " />
+    <node concept="2vGlFM" id="GAenPhkGJP" role="2vGlFZ">
+      <property role="2vGlFL" value="" />
     </node>
-    <node concept="2vGlFM" id="GAenPhfDe0" role="2vGlFZ">
-      <property role="2vGlFL" value="            labels = labels.to(device)                                          " />
+    <node concept="2vGlFM" id="GAenPhkGJQ" role="2vGlFZ">
+      <property role="2vGlFL" value="def test_accuracy_test(VGG11,CIFAR10):" />
     </node>
-    <node concept="2vGlFM" id="GAenPhfDe1" role="2vGlFZ">
-      <property role="2vGlFL" value="            outputs = model(images)   " />
+    <node concept="2vGlFM" id="GAenPhkGJR" role="2vGlFZ">
+      <property role="2vGlFL" value="    assert (accuracy(VGG11, CIFAR10, 'cuda:0') &gt;=  0.9)" />
     </node>
-    <node concept="2vGlFM" id="GAenPhfDe2" role="2vGlFZ">
-      <property role="2vGlFL" value="    end.record()                                                         " />
+    <node concept="2vGlFM" id="GAenPhkGJS" role="2vGlFZ">
+      <property role="2vGlFL" value="" />
     </node>
-    <node concept="2vGlFM" id="GAenPhfDe3" role="2vGlFZ">
-      <property role="2vGlFL" value="    torch.cuda.synchronize()                        " />
+    <node concept="2vGlFM" id="GAenPhkGJT" role="2vGlFZ">
+      <property role="2vGlFL" value="" />
     </node>
-    <node concept="2vGlFM" id="GAenPhfDe4" role="2vGlFZ">
-      <property role="2vGlFL" value="                                                               " />
+    <node concept="2vGlFM" id="GAenPhkGJU" role="2vGlFZ">
+      <property role="2vGlFL" value="def test_accuracy_test_impossible(VGG11,CIFAR10):" />
     </node>
-    <node concept="2vGlFM" id="GAenPhfDe5" role="2vGlFZ">
-      <property role="2vGlFL" value="    return start.elapsed_time(end) / 1000    " />
+    <node concept="2vGlFM" id="GAenPhkGJV" role="2vGlFZ">
+      <property role="2vGlFL" value="    assert (accuracy(VGG11, CIFAR10, 'cuda:0') &gt; 1.0)" />
     </node>
     <node concept="$H8x0" id="GAenPhfDd$" role="gsr1X">
       <property role="TrG5h" value="device" />

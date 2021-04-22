@@ -799,15 +799,6 @@
       <node concept="l2Vlx" id="4LAoA_s6d65" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="2Nt1By$SKPU">
-    <ref role="1XX52x" to="qbzd:2Nt1By$SKPp" resolve="Argument" />
-    <node concept="3EZMnI" id="2Nt1By$SKPW" role="2wV5jI">
-      <node concept="3F0A7n" id="2Nt1By$SKQ6" role="3EZMnx">
-        <ref role="1NtTu8" to="qbzd:2Nt1By$SKPu" resolve="value" />
-      </node>
-      <node concept="l2Vlx" id="2Nt1By$SKPZ" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="6DXTEHeMn58">
     <property role="3GE5qa" value="logic" />
     <ref role="1XX52x" to="qbzd:6DXTEHeMm7K" resolve="VariableReference" />

@@ -1,6 +1,6 @@
 import torch
 
-from metrics import recall,time_second,accuracy,precision
+from metrics import time_second,recall,accuracy,precision
 
 
 def test_demo_test():
@@ -11,8 +11,8 @@ def test_accuracy_test(VGG11,CIFAR10):
     assert (accuracy(VGG11, CIFAR10, 'cuda:0') >=  0.9)
 
 
-def test_accuracy_test_impossible(Resnet18,CIFAR10):
-    assert (accuracy(Resnet18, CIFAR10, 'cuda:0') >=  1.)
+def test_accuracy_test_impossible(VGG11,CIFAR10):
+    assert (accuracy(VGG11, CIFAR10, 'cuda:0') > 1.0)
 
 
 def test_precision_recall_treadoff(VGG11,CIFAR10):
